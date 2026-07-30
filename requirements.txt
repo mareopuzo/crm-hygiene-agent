@@ -1,0 +1,7 @@
+# The sample data generator (data/generate_sample.py) needs NO dependencies —
+# it runs on a bare Python 3.10+ install.
+#
+# These are for the engine + web app, added as we build each layer.
+pandas>=2.0
+streamlit>=1.30
+pytest>=7.0

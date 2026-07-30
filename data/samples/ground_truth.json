@@ -1,0 +1,1056 @@
+{
+  "issue_counts": {
+    "company_duplicate": 6,
+    "company_missing_domain": 5,
+    "company_missing_industry": 4,
+    "company_missing_owner": 5,
+    "company_name_variant": 4,
+    "contact_bad_routing": 20,
+    "contact_decayed": 25,
+    "contact_duplicate_email": 33,
+    "contact_invalid_email": 13,
+    "contact_missing_country": 13,
+    "contact_missing_email": 20,
+    "contact_missing_lifecycle": 13,
+    "contact_missing_owner": 16,
+    "contact_role_based_email": 16,
+    "deal_missing_amount": 10,
+    "deal_missing_close_date": 8,
+    "deal_missing_owner": 8,
+    "deal_past_close_date": 12,
+    "deal_stale": 15
+  },
+  "issues": {
+    "company_duplicate": [
+      {
+        "record_id": 1081,
+        "detail": "same domain as 1069: globex578.io"
+      },
+      {
+        "record_id": 1082,
+        "detail": "same domain as 1024: wayne363.net"
+      },
+      {
+        "record_id": 1083,
+        "detail": "same domain as 1025: gekko348.com"
+      },
+      {
+        "record_id": 1084,
+        "detail": "same domain as 1028: wayne925.com"
+      },
+      {
+        "record_id": 1085,
+        "detail": "same domain as 1062: acme212.net"
+      },
+      {
+        "record_id": 1086,
+        "detail": "same domain as 1036: gekko310.com"
+      }
+    ],
+    "company_missing_domain": [
+      {
+        "record_id": 1013,
+        "detail": ""
+      },
+      {
+        "record_id": 1025,
+        "detail": ""
+      },
+      {
+        "record_id": 1038,
+        "detail": ""
+      },
+      {
+        "record_id": 1030,
+        "detail": ""
+      },
+      {
+        "record_id": 1047,
+        "detail": ""
+      }
+    ],
+    "company_missing_industry": [
+      {
+        "record_id": 1036,
+        "detail": ""
+      },
+      {
+        "record_id": 1006,
+        "detail": ""
+      },
+      {
+        "record_id": 1007,
+        "detail": ""
+      },
+      {
+        "record_id": 1071,
+        "detail": ""
+      }
+    ],
+    "company_missing_owner": [
+      {
+        "record_id": 1023,
+        "detail": ""
+      },
+      {
+        "record_id": 1039,
+        "detail": ""
+      },
+      {
+        "record_id": 1002,
+        "detail": ""
+      },
+      {
+        "record_id": 1069,
+        "detail": ""
+      },
+      {
+        "record_id": 1017,
+        "detail": ""
+      }
+    ],
+    "company_name_variant": [
+      {
+        "record_id": 1087,
+        "detail": "name variant of 1076 (Initech500)"
+      },
+      {
+        "record_id": 1088,
+        "detail": "name variant of 1068 (Acme973)"
+      },
+      {
+        "record_id": 1089,
+        "detail": "name variant of 1077 (Cyberdyne971)"
+      },
+      {
+        "record_id": 1090,
+        "detail": "name variant of 1037 (Gekko567)"
+      }
+    ],
+    "contact_bad_routing": [
+      {
+        "record_id": 5005,
+        "detail": "country Australia outside Sarah Chen's region (North America)"
+      },
+      {
+        "record_id": 5193,
+        "detail": "country Australia outside Ingrid Larsen's region (EMEA)"
+      },
+      {
+        "record_id": 5106,
+        "detail": "country United Arab Emirates outside Tom Becker's region (North America)"
+      },
+      {
+        "record_id": 5252,
+        "detail": "country United States outside Ingrid Larsen's region (EMEA)"
+      },
+      {
+        "record_id": 5144,
+        "detail": "country United States outside Omar Haddad's region (EMEA)"
+      },
+      {
+        "record_id": 5119,
+        "detail": "country Japan outside Sarah Chen's region (North America)"
+      },
+      {
+        "record_id": 5235,
+        "detail": "country Mexico outside Mei Tan's region (APAC)"
+      },
+      {
+        "record_id": 5049,
+        "detail": "country Mexico outside Mei Tan's region (APAC)"
+      },
+      {
+        "record_id": 5202,
+        "detail": "country Mexico outside Mei Tan's region (APAC)"
+      },
+      {
+        "record_id": 5032,
+        "detail": "country Singapore outside Ingrid Larsen's region (EMEA)"
+      },
+      {
+        "record_id": 5122,
+        "detail": "country France outside Mei Tan's region (APAC)"
+      },
+      {
+        "record_id": 5162,
+        "detail": "country Japan outside Sarah Chen's region (North America)"
+      },
+      {
+        "record_id": 5163,
+        "detail": "country Japan outside Sarah Chen's region (North America)"
+      },
+      {
+        "record_id": 5120,
+        "detail": "country United States outside Omar Haddad's region (EMEA)"
+      },
+      {
+        "record_id": 5070,
+        "detail": "country Germany outside Sarah Chen's region (North America)"
+      },
+      {
+        "record_id": 5055,
+        "detail": "country Canada outside Omar Haddad's region (EMEA)"
+      },
+      {
+        "record_id": 5239,
+        "detail": "country India outside Ingrid Larsen's region (EMEA)"
+      },
+      {
+        "record_id": 5062,
+        "detail": "country Germany outside Mei Tan's region (APAC)"
+      },
+      {
+        "record_id": 5232,
+        "detail": "country India outside Sarah Chen's region (North America)"
+      },
+      {
+        "record_id": 5136,
+        "detail": "country United Kingdom outside Sarah Chen's region (North America)"
+      }
+    ],
+    "contact_decayed": [
+      {
+        "record_id": 5105,
+        "detail": "last activity 2025-05-17"
+      },
+      {
+        "record_id": 5275,
+        "detail": "last activity 2024-11-23"
+      },
+      {
+        "record_id": 5201,
+        "detail": "last activity 2024-03-02"
+      },
+      {
+        "record_id": 5034,
+        "detail": "last activity 2024-12-10"
+      },
+      {
+        "record_id": 5224,
+        "detail": "last activity 2025-02-21"
+      },
+      {
+        "record_id": 5030,
+        "detail": "last activity 2025-02-15"
+      },
+      {
+        "record_id": 5045,
+        "detail": "last activity 2024-08-05"
+      },
+      {
+        "record_id": 5060,
+        "detail": "last activity 2024-07-16"
+      },
+      {
+        "record_id": 5029,
+        "detail": "last activity 2024-12-11"
+      },
+      {
+        "record_id": 5090,
+        "detail": "last activity 2025-06-23"
+      },
+      {
+        "record_id": 5007,
+        "detail": "last activity 2025-06-05"
+      },
+      {
+        "record_id": 5006,
+        "detail": "last activity 2025-05-09"
+      },
+      {
+        "record_id": 5255,
+        "detail": "last activity 2024-11-02"
+      },
+      {
+        "record_id": 5268,
+        "detail": "last activity 2024-05-12"
+      },
+      {
+        "record_id": 5133,
+        "detail": "last activity 2025-05-06"
+      },
+      {
+        "record_id": 5191,
+        "detail": "last activity 2025-06-16"
+      },
+      {
+        "record_id": 5138,
+        "detail": "last activity 2025-06-25"
+      },
+      {
+        "record_id": 5016,
+        "detail": "last activity 2024-11-14"
+      },
+      {
+        "record_id": 5220,
+        "detail": "last activity 2025-01-18"
+      },
+      {
+        "record_id": 5269,
+        "detail": "last activity 2025-08-19"
+      },
+      {
+        "record_id": 5135,
+        "detail": "last activity 2024-03-12"
+      },
+      {
+        "record_id": 5040,
+        "detail": "last activity 2024-06-02"
+      },
+      {
+        "record_id": 5234,
+        "detail": "last activity 2024-05-18"
+      },
+      {
+        "record_id": 5185,
+        "detail": "last activity 2025-08-28"
+      },
+      {
+        "record_id": 5256,
+        "detail": "last activity 2024-03-22"
+      }
+    ],
+    "contact_duplicate_email": [
+      {
+        "record_id": 5251,
+        "detail": "same email as 5188: lars.chen@prestige204.io"
+      },
+      {
+        "record_id": 5252,
+        "detail": "same email as 5027: john.nguyen@initech500-hq.io"
+      },
+      {
+        "record_id": 5253,
+        "detail": "same email as 5095: mary.kim@wayne607.com"
+      },
+      {
+        "record_id": 5254,
+        "detail": "same email as 5036: michael.novak@vandelay734.co"
+      },
+      {
+        "record_id": 5255,
+        "detail": "same email as 5199: david.johnson@wayne275.com"
+      },
+      {
+        "record_id": 5256,
+        "detail": "same email as 5165: chloe.miller@soylent253.com"
+      },
+      {
+        "record_id": 5257,
+        "detail": "same email as 5074: william.davis@prestige831.io"
+      },
+      {
+        "record_id": 5258,
+        "detail": "same email as 5005: lars.okafor@wayne575.com"
+      },
+      {
+        "record_id": 5259,
+        "detail": "same email as 5085: chloe.kim@stark501.com"
+      },
+      {
+        "record_id": 5260,
+        "detail": "same email as 5180: wei.okafor@vandelay383.net"
+      },
+      {
+        "record_id": 5261,
+        "detail": "same email as 5110: william.martinez@wayne575.com"
+      },
+      {
+        "record_id": 5262,
+        "detail": "same email as 5078: john.martinez@hooli241.co"
+      },
+      {
+        "record_id": 5263,
+        "detail": "same email as 5227: david.williams@wonka477.net"
+      },
+      {
+        "record_id": 5264,
+        "detail": "same email as 5045: priya.andersson@soylent524.com"
+      },
+      {
+        "record_id": 5265,
+        "detail": "same email as 5072: patricia.kim@umbrella734.net"
+      },
+      {
+        "record_id": 5266,
+        "detail": "same email as 5197: priya.silva@gekko157.io"
+      },
+      {
+        "record_id": 5267,
+        "detail": "same email as 5220: yuki.silva@umbrella769.net"
+      },
+      {
+        "record_id": 5268,
+        "detail": "same email as 5072: patricia.kim@umbrella734.net"
+      },
+      {
+        "record_id": 5269,
+        "detail": "same email as 5142: patricia.okafor@umbrella769.net"
+      },
+      {
+        "record_id": 5270,
+        "detail": "same email as 5044: robert.johnson@soylent271.com"
+      },
+      {
+        "record_id": 5271,
+        "detail": "normalized-equal email to 5146"
+      },
+      {
+        "record_id": 5272,
+        "detail": "normalized-equal email to 5014"
+      },
+      {
+        "record_id": 5273,
+        "detail": "normalized-equal email to 5155"
+      },
+      {
+        "record_id": 5274,
+        "detail": "normalized-equal email to 5106"
+      },
+      {
+        "record_id": 5275,
+        "detail": "normalized-equal email to 5266"
+      },
+      {
+        "record_id": 5276,
+        "detail": "normalized-equal email to 5261"
+      },
+      {
+        "record_id": 5277,
+        "detail": "normalized-equal email to 5097"
+      },
+      {
+        "record_id": 5278,
+        "detail": "normalized-equal email to 5201"
+      },
+      {
+        "record_id": 5279,
+        "detail": "normalized-equal email to 5152"
+      },
+      {
+        "record_id": 5280,
+        "detail": "normalized-equal email to 5028"
+      },
+      {
+        "record_id": 5281,
+        "detail": "normalized-equal email to 5123"
+      },
+      {
+        "record_id": 5282,
+        "detail": "normalized-equal email to 5254"
+      },
+      {
+        "record_id": 5283,
+        "detail": "normalized-equal email to 5198"
+      }
+    ],
+    "contact_invalid_email": [
+      {
+        "record_id": 5257,
+        "detail": "william.davis@prestige831.ii"
+      },
+      {
+        "record_id": 5213,
+        "detail": "priya.nguyen@nguyen.cim"
+      },
+      {
+        "record_id": 5217,
+        "detail": "sofia.rossi@umbrella769.net"
+      },
+      {
+        "record_id": 5206,
+        "detail": "david.brown@stark501.cim"
+      },
+      {
+        "record_id": 5043,
+        "detail": "sofia.davis@gekko348.cim"
+      },
+      {
+        "record_id": 5275,
+        "detail": "  PRIYA.SILVA@GEKKO157.IO "
+      },
+      {
+        "record_id": 5276,
+        "detail": "  WILLIAM.MARTINEZ@WAYNE575.COM "
+      },
+      {
+        "record_id": 5079,
+        "detail": "sofia.haddad@globex738.co"
+      },
+      {
+        "record_id": 5143,
+        "detail": "lars.chen@chen.cim"
+      },
+      {
+        "record_id": 5043,
+        "detail": "sofia.davis@gekko348.cim"
+      },
+      {
+        "record_id": 5159,
+        "detail": "jennifer.smith@gekko831.ii"
+      },
+      {
+        "record_id": 5041,
+        "detail": "david.silva@cyberdyne624.ii"
+      },
+      {
+        "record_id": 5262,
+        "detail": "john.martinez@hooli241.co"
+      }
+    ],
+    "contact_missing_country": [
+      {
+        "record_id": 5238,
+        "detail": ""
+      },
+      {
+        "record_id": 5189,
+        "detail": ""
+      },
+      {
+        "record_id": 5253,
+        "detail": ""
+      },
+      {
+        "record_id": 5101,
+        "detail": ""
+      },
+      {
+        "record_id": 5280,
+        "detail": ""
+      },
+      {
+        "record_id": 5126,
+        "detail": ""
+      },
+      {
+        "record_id": 5078,
+        "detail": ""
+      },
+      {
+        "record_id": 5004,
+        "detail": ""
+      },
+      {
+        "record_id": 5210,
+        "detail": ""
+      },
+      {
+        "record_id": 5013,
+        "detail": ""
+      },
+      {
+        "record_id": 5120,
+        "detail": ""
+      },
+      {
+        "record_id": 5278,
+        "detail": ""
+      },
+      {
+        "record_id": 5178,
+        "detail": ""
+      }
+    ],
+    "contact_missing_email": [
+      {
+        "record_id": 5086,
+        "detail": ""
+      },
+      {
+        "record_id": 5189,
+        "detail": ""
+      },
+      {
+        "record_id": 5081,
+        "detail": ""
+      },
+      {
+        "record_id": 5131,
+        "detail": ""
+      },
+      {
+        "record_id": 5053,
+        "detail": ""
+      },
+      {
+        "record_id": 5060,
+        "detail": ""
+      },
+      {
+        "record_id": 5117,
+        "detail": ""
+      },
+      {
+        "record_id": 5261,
+        "detail": ""
+      },
+      {
+        "record_id": 5002,
+        "detail": ""
+      },
+      {
+        "record_id": 5023,
+        "detail": ""
+      },
+      {
+        "record_id": 5007,
+        "detail": ""
+      },
+      {
+        "record_id": 5126,
+        "detail": ""
+      },
+      {
+        "record_id": 5024,
+        "detail": ""
+      },
+      {
+        "record_id": 5242,
+        "detail": ""
+      },
+      {
+        "record_id": 5187,
+        "detail": ""
+      },
+      {
+        "record_id": 5197,
+        "detail": ""
+      },
+      {
+        "record_id": 5077,
+        "detail": ""
+      },
+      {
+        "record_id": 5092,
+        "detail": ""
+      },
+      {
+        "record_id": 5019,
+        "detail": ""
+      },
+      {
+        "record_id": 5215,
+        "detail": ""
+      }
+    ],
+    "contact_missing_lifecycle": [
+      {
+        "record_id": 5036,
+        "detail": ""
+      },
+      {
+        "record_id": 5239,
+        "detail": ""
+      },
+      {
+        "record_id": 5145,
+        "detail": ""
+      },
+      {
+        "record_id": 5160,
+        "detail": ""
+      },
+      {
+        "record_id": 5168,
+        "detail": ""
+      },
+      {
+        "record_id": 5045,
+        "detail": ""
+      },
+      {
+        "record_id": 5234,
+        "detail": ""
+      },
+      {
+        "record_id": 5005,
+        "detail": ""
+      },
+      {
+        "record_id": 5189,
+        "detail": ""
+      },
+      {
+        "record_id": 5103,
+        "detail": ""
+      },
+      {
+        "record_id": 5150,
+        "detail": ""
+      },
+      {
+        "record_id": 5156,
+        "detail": ""
+      },
+      {
+        "record_id": 5125,
+        "detail": ""
+      }
+    ],
+    "contact_missing_owner": [
+      {
+        "record_id": 5115,
+        "detail": ""
+      },
+      {
+        "record_id": 5165,
+        "detail": ""
+      },
+      {
+        "record_id": 5128,
+        "detail": ""
+      },
+      {
+        "record_id": 5214,
+        "detail": ""
+      },
+      {
+        "record_id": 5164,
+        "detail": ""
+      },
+      {
+        "record_id": 5139,
+        "detail": ""
+      },
+      {
+        "record_id": 5040,
+        "detail": ""
+      },
+      {
+        "record_id": 5191,
+        "detail": ""
+      },
+      {
+        "record_id": 5062,
+        "detail": ""
+      },
+      {
+        "record_id": 5258,
+        "detail": ""
+      },
+      {
+        "record_id": 5027,
+        "detail": ""
+      },
+      {
+        "record_id": 5092,
+        "detail": ""
+      },
+      {
+        "record_id": 5115,
+        "detail": ""
+      },
+      {
+        "record_id": 5265,
+        "detail": ""
+      },
+      {
+        "record_id": 5024,
+        "detail": ""
+      },
+      {
+        "record_id": 5206,
+        "detail": ""
+      }
+    ],
+    "contact_role_based_email": [
+      {
+        "record_id": 5058,
+        "detail": "sales@soylent524.com"
+      },
+      {
+        "record_id": 5256,
+        "detail": "hello@soylent253.com"
+      },
+      {
+        "record_id": 5037,
+        "detail": "contact@wayne575.com"
+      },
+      {
+        "record_id": 5007,
+        "detail": "admin@rossi.com"
+      },
+      {
+        "record_id": 5163,
+        "detail": "sales@wayne575.com"
+      },
+      {
+        "record_id": 5199,
+        "detail": "office@wayne275.com"
+      },
+      {
+        "record_id": 5216,
+        "detail": "admin@cyberdyne83.io"
+      },
+      {
+        "record_id": 5280,
+        "detail": "hello@MARTINEZ.COM"
+      },
+      {
+        "record_id": 5089,
+        "detail": "office@cyberdyne971-hq.io"
+      },
+      {
+        "record_id": 5242,
+        "detail": "office@globex578.io"
+      },
+      {
+        "record_id": 5038,
+        "detail": "info@prestige204.io"
+      },
+      {
+        "record_id": 5035,
+        "detail": "info@wonka662.net"
+      },
+      {
+        "record_id": 5135,
+        "detail": "sales@globex88.net"
+      },
+      {
+        "record_id": 5021,
+        "detail": "info@globex88.net"
+      },
+      {
+        "record_id": 5204,
+        "detail": "contact@vandelay470.io"
+      },
+      {
+        "record_id": 5147,
+        "detail": "hello@gekko831.io"
+      }
+    ],
+    "deal_missing_amount": [
+      {
+        "record_id": 9087,
+        "detail": ""
+      },
+      {
+        "record_id": 9016,
+        "detail": ""
+      },
+      {
+        "record_id": 9069,
+        "detail": ""
+      },
+      {
+        "record_id": 9001,
+        "detail": ""
+      },
+      {
+        "record_id": 9083,
+        "detail": ""
+      },
+      {
+        "record_id": 9093,
+        "detail": ""
+      },
+      {
+        "record_id": 9080,
+        "detail": ""
+      },
+      {
+        "record_id": 9009,
+        "detail": ""
+      },
+      {
+        "record_id": 9097,
+        "detail": ""
+      },
+      {
+        "record_id": 9096,
+        "detail": ""
+      }
+    ],
+    "deal_missing_close_date": [
+      {
+        "record_id": 9014,
+        "detail": ""
+      },
+      {
+        "record_id": 9038,
+        "detail": ""
+      },
+      {
+        "record_id": 9101,
+        "detail": ""
+      },
+      {
+        "record_id": 9088,
+        "detail": ""
+      },
+      {
+        "record_id": 9039,
+        "detail": ""
+      },
+      {
+        "record_id": 9078,
+        "detail": ""
+      },
+      {
+        "record_id": 9012,
+        "detail": ""
+      },
+      {
+        "record_id": 9037,
+        "detail": ""
+      }
+    ],
+    "deal_missing_owner": [
+      {
+        "record_id": 9075,
+        "detail": ""
+      },
+      {
+        "record_id": 9006,
+        "detail": ""
+      },
+      {
+        "record_id": 9090,
+        "detail": ""
+      },
+      {
+        "record_id": 9109,
+        "detail": ""
+      },
+      {
+        "record_id": 9010,
+        "detail": ""
+      },
+      {
+        "record_id": 9046,
+        "detail": ""
+      },
+      {
+        "record_id": 9119,
+        "detail": ""
+      },
+      {
+        "record_id": 9065,
+        "detail": ""
+      }
+    ],
+    "deal_past_close_date": [
+      {
+        "record_id": 9103,
+        "detail": "open, close date 2026-02-10 in past"
+      },
+      {
+        "record_id": 9013,
+        "detail": "open, close date 2026-02-09 in past"
+      },
+      {
+        "record_id": 9041,
+        "detail": "open, close date 2026-06-24 in past"
+      },
+      {
+        "record_id": 9040,
+        "detail": "open, close date 2026-02-05 in past"
+      },
+      {
+        "record_id": 9014,
+        "detail": "open, close date 2026-07-14 in past"
+      },
+      {
+        "record_id": 9088,
+        "detail": "open, close date 2026-07-11 in past"
+      },
+      {
+        "record_id": 9019,
+        "detail": "open, close date 2026-07-07 in past"
+      },
+      {
+        "record_id": 9034,
+        "detail": "open, close date 2026-02-28 in past"
+      },
+      {
+        "record_id": 9014,
+        "detail": "open, close date 2026-05-15 in past"
+      },
+      {
+        "record_id": 9080,
+        "detail": "open, close date 2026-03-27 in past"
+      },
+      {
+        "record_id": 9120,
+        "detail": "open, close date 2026-04-01 in past"
+      },
+      {
+        "record_id": 9061,
+        "detail": "open, close date 2026-04-12 in past"
+      }
+    ],
+    "deal_stale": [
+      {
+        "record_id": 9065,
+        "detail": "open, last activity 2026-03-23"
+      },
+      {
+        "record_id": 9063,
+        "detail": "open, last activity 2026-02-13"
+      },
+      {
+        "record_id": 9056,
+        "detail": "open, last activity 2025-11-05"
+      },
+      {
+        "record_id": 9118,
+        "detail": "open, last activity 2025-12-24"
+      },
+      {
+        "record_id": 9002,
+        "detail": "open, last activity 2025-11-26"
+      },
+      {
+        "record_id": 9065,
+        "detail": "open, last activity 2026-03-16"
+      },
+      {
+        "record_id": 9117,
+        "detail": "open, last activity 2026-05-06"
+      },
+      {
+        "record_id": 9062,
+        "detail": "open, last activity 2025-10-25"
+      },
+      {
+        "record_id": 9022,
+        "detail": "open, last activity 2026-03-12"
+      },
+      {
+        "record_id": 9104,
+        "detail": "open, last activity 2026-05-10"
+      },
+      {
+        "record_id": 9101,
+        "detail": "open, last activity 2026-01-05"
+      },
+      {
+        "record_id": 9100,
+        "detail": "open, last activity 2026-01-12"
+      },
+      {
+        "record_id": 9008,
+        "detail": "open, last activity 2025-12-01"
+      },
+      {
+        "record_id": 9038,
+        "detail": "open, last activity 2026-01-05"
+      },
+      {
+        "record_id": 9018,
+        "detail": "open, last activity 2026-04-04"
+      }
+    ]
+  },
+  "meta": {
+    "seed": 42,
+    "today": "2026-07-30",
+    "row_counts": {
+      "companies": 90,
+      "contacts": 283,
+      "deals": 120
+    }
+  }
+}
