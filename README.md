@@ -1,10 +1,14 @@
 # CRM Hygiene Agent
 
+### ▶ [**Try the live demo →**](https://crm-hygine-agent.streamlit.app/)
+
 **Upload a HubSpot CRM export → get a CRM Health Score, a dollar-quantified estimate of what the mess is costing you, and a prioritized remediation punch list.** No paid services, runs anywhere, reproducible every time.
 
 > Built as a RevOps engineering case study: it demonstrates domain fluency (knowing *what* good CRM hygiene is and *why* it maps to revenue), engineering (a clean, tested data pipeline), and communication (a decision-ready report, not a wall of errors).
 
-![CRM Hygiene Agent](docs/screenshot.png)
+[![CRM Hygiene Agent](docs/screenshot.png)](https://crm-hygine-agent.streamlit.app/)
+
+*The demo opens with sample data already loaded — it produces a full report on first click, no file needed.*
 
 ---
 
@@ -145,4 +149,4 @@ Every check is verified against the ground-truth manifest, plus hand-built edge 
 - [x] **Step 3 — All 11 checks** (duplicates, missing fields, decay, routing, stale deals; 55 tests)
 - [x] **Step 4 — Scoring + \$ impact model + report** (health score, risk-adjusted exposure, ranked punch list; 84 tests)
 - [x] **Step 5 — Streamlit app** (upload or sample, live-tunable policy, filterable findings, CSV/JSON export; 92 tests)
-- [ ] Step 6 — Deploy (live link)
+- [x] **Step 6 — Deployed** — [live at crm-hygine-agent.streamlit.app](https://crm-hygine-agent.streamlit.app/)
