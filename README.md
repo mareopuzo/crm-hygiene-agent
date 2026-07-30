@@ -99,6 +99,23 @@ Every threshold and cost assumption is a sidebar control, so you can retune the 
 python data/generate_sample.py
 ```
 
+Tested on Python 3.11 with the versions pinned in `requirements.txt`.
+
+## Deploying
+
+The app runs free on [Streamlit Community Cloud](https://share.streamlit.io):
+
+| Field | Value |
+|---|---|
+| Repository | `mareopuzo/project` |
+| Branch | `main` |
+| **Main file path** | **`app.py`** |
+| Python version | 3.11 (under *Advanced settings*) |
+
+The deploy form defaults the main file to `streamlit_app.py` — that's a placeholder, not this repo's entry point. Set it to `app.py`.
+
+If the branch dropdown claims a branch doesn't exist, reload the page: the branch list is fetched once when the form opens, so it goes stale after a push.
+
 ### The sample data
 
 `data/generate_sample.py` builds three CSVs shaped like a real HubSpot export (Contacts, Companies, Deals) with a **controlled set of planted hygiene issues**, plus a `ground_truth.json` manifest listing every issue by record ID. That manifest is the oracle the test suite checks the engine against — so we can prove the agent catches what's actually wrong without over-flagging clean records.

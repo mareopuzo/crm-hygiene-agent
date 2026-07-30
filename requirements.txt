@@ -1,7 +1,14 @@
-# The sample data generator (data/generate_sample.py) needs NO dependencies —
-# it runs on a bare Python 3.10+ install.
+# Pinned to the versions this project is tested against, so a fresh build
+# (Streamlit Community Cloud installs from scratch on every deploy) can't drift
+# onto a newer release that changes behaviour.
 #
-# These are for the engine + web app, added as we build each layer.
-pandas>=2.0
-streamlit>=1.30
-pytest>=7.0
+# Note: the sample data generator (data/generate_sample.py) needs NO
+# dependencies at all — it runs on a bare Python 3.10+ install.
+#
+# To upgrade: bump a pin, run `python -m pytest`, and commit only if green.
+
+pandas==3.0.5
+streamlit==1.60.0
+
+# Test-only, harmless in a deploy and keeps `pytest` working on a fresh clone.
+pytest==9.1.1
