@@ -28,6 +28,40 @@ The killer detail: most teams can't even *measure* how bad it is, so it never ge
 | **Stale deals** | Open deals past age / close date with no activity | Inflated forecast, pipeline hygiene |
 | **Report** | Health score + \$ impact + prioritized punch list | Makes all of the above actionable |
 
+## The output
+
+```
+CRM Health Score 78/100 (grade C) — 246 issues across 213 of 493 records,
+representing ~42 hours (≈$3,182) of avoidable work and $924,750 of pipeline at risk.
+
+#  Issue                              Recs     Sev   Hours       Cost     At risk  +Score
+1  Stale Deals                          15    High     3.8       $281    $556,000     1.5
+2  Deals Past Close Date                12    High     2.0       $150    $368,750     1.2
+3  Missing Required Fields — Contact    62    High     9.0       $678          $0     5.5
+4  Duplicate Contacts                   33    High     8.2       $619          $0     3.4
+5  Territory Routing — Contact          20    High     6.7       $500          $0     1.8
+```
+
+The punch list is ranked by **what fixing it is worth**, not by row count — so a small, expensive category outranks a large cosmetic one. The `+Score` column is *measured*, not estimated: the scorer re-runs with that category removed and takes the difference, which matters because per-record penalty capping makes the relationship non-linear. That turns the report from a complaint into a plan: *"merge these 33 duplicates, recover 3.4 points and 8 hours."*
+
+## How the numbers are built
+
+A single figure a sharp CRO can poke a hole in discredits the whole report, so the model follows three rules:
+
+**1. Two numbers, two methods, never mixed.**
+- *Direct cost* — every finding carries an estimate of the minutes to remediate it, priced at a loaded hourly rate. One consistent unit, additive, easy to defend.
+- *At-risk pipeline* — deal value × a risk factor, labelled **at risk**, never "lost."
+
+**2. Risk-adjusted, never face value.** A 90-day-silent $150k deal is not a $150k loss. Exposure is banded by neglect (30d → 25%, 60d → 50%, 90d+ → 75%) and **capped below 100%**, because even a badly neglected deal isn't certainly dead.
+
+**3. Additive by construction.** A deal that is both stale *and* past its close date has one exposure, not two. The at-risk amount is attributed to the single worst finding and zeroed on the others, so summing any subset of findings is always correct.
+
+Every assumption lives in `ImpactAssumptions` and is printed with the report, so a reader who disagrees with a number can change it rather than disbelieving the output.
+
+### The health score
+
+Each record starts at full health and loses points per finding, weighted by severity, **capped at two critical issues** so a few catastrophic records can't dominate. Scores are pooled across all records, which makes the score volume-normalized — a bigger CRM isn't automatically a worse one.
+
 ## Architecture
 
 The rule **engine knows nothing about the web app**. It takes DataFrames in and returns structured findings out, so the same engine can be driven by the web app, a CLI, or a test suite with zero changes.
@@ -87,6 +121,6 @@ Every check is verified against the ground-truth manifest, plus hand-built edge 
 - [x] **Step 1 — Sample data generator** (HubSpot-shaped CSVs + ground-truth manifest)
 - [x] **Step 2 — Loader + core models** (`Finding`, `Check` contract, `Config`, HubSpot schema normalization; 8 tests)
 - [x] **Step 3 — All 11 checks** (duplicates, missing fields, decay, routing, stale deals; 55 tests)
-- [ ] Step 4 — Scoring + \$ impact model + report
+- [x] **Step 4 — Scoring + \$ impact model + report** (health score, risk-adjusted exposure, ranked punch list; 84 tests)
 - [ ] Step 5 — Streamlit app
 - [ ] Step 6 — Deploy (live link)

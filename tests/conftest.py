@@ -39,8 +39,10 @@ def sample_data(ground_truth):
     )
 
 
-@pytest.fixture
+@pytest.fixture(scope="session")
 def config():
+    # Session-scoped so expensive fixtures (like a built report) can depend on
+    # it. Nothing mutates it; tests needing different policy build their own.
     return default_config()
 
 
