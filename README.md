@@ -4,6 +4,8 @@
 
 > Built as a RevOps engineering case study: it demonstrates domain fluency (knowing *what* good CRM hygiene is and *why* it maps to revenue), engineering (a clean, tested data pipeline), and communication (a decision-ready report, not a wall of errors).
 
+![CRM Hygiene Agent](docs/screenshot.png)
+
 ---
 
 ## The problem
@@ -68,7 +70,7 @@ The rule **engine knows nothing about the web app**. It takes DataFrames in and 
 
 ```
 crm-hygiene-agent/
-├── app.py                 # Streamlit UI (thin — upload, call engine, render)
+├── app.py                 # Streamlit UI (thin — collect inputs, call engine, render)
 ├── engine/                # the brain (pure Python, no UI deps)
 │   ├── loader.py          # read + normalize HubSpot CSV schema
 │   ├── models.py          # Finding / Check / Severity types
@@ -84,14 +86,17 @@ crm-hygiene-agent/
 ## Quick start
 
 ```bash
-# 1. (optional) regenerate the sample data — needs no dependencies
-python data/generate_sample.py
-
-# 2. install engine + app deps
 pip install -r requirements.txt
-
-# 3. run the web app  (coming in a later build step)
 streamlit run app.py
+```
+
+The app opens with the sample CRM already loaded, so it produces a full report on first click — no file hunting required. Switch the sidebar to **Upload your own export** to audit real HubSpot CSVs (Contacts, Companies, Deals — any subset works).
+
+Every threshold and cost assumption is a sidebar control, so you can retune the policy to your own motion and watch the score and the punch list move.
+
+```bash
+# optional: regenerate the sample data — needs no dependencies
+python data/generate_sample.py
 ```
 
 ### The sample data
@@ -122,5 +127,5 @@ Every check is verified against the ground-truth manifest, plus hand-built edge 
 - [x] **Step 2 — Loader + core models** (`Finding`, `Check` contract, `Config`, HubSpot schema normalization; 8 tests)
 - [x] **Step 3 — All 11 checks** (duplicates, missing fields, decay, routing, stale deals; 55 tests)
 - [x] **Step 4 — Scoring + \$ impact model + report** (health score, risk-adjusted exposure, ranked punch list; 84 tests)
-- [ ] Step 5 — Streamlit app
+- [x] **Step 5 — Streamlit app** (upload or sample, live-tunable policy, filterable findings, CSV/JSON export; 92 tests)
 - [ ] Step 6 — Deploy (live link)

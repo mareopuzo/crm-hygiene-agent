@@ -119,3 +119,22 @@ def default_config() -> Config:
         owner_regions=dict(SAMPLE_OWNER_REGIONS),
         region_countries={k: list(v) for k, v in SAMPLE_REGION_COUNTRIES.items()},
     )
+
+
+def build_config(
+    *,
+    stale_deal_days: int = Config.stale_deal_days,
+    decayed_contact_days: int = Config.decayed_contact_days,
+    territory_routing: bool = True,
+) -> Config:
+    """
+    Assemble a Config from the handful of knobs a UI exposes.
+
+    Lives here rather than in the app so the wiring between a control and the
+    policy it drives is testable — a slider that silently fails to change
+    anything is the kind of bug a demo doesn't reveal.
+    """
+    config = default_config() if territory_routing else Config()
+    config.stale_deal_days = stale_deal_days
+    config.decayed_contact_days = decayed_contact_days
+    return config
