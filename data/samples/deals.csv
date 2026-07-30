@@ -1,121 +1,121 @@
 Record ID,Deal Name,Deal Stage,Amount,Deal owner,Pipeline,Close Date,Create Date,Last Activity Date,Associated Company ID
-9001,Acme603 - Expansion,presentationscheduled,,Mei Tan,Sales Pipeline,2025-08-31,2025-05-13,2026-07-20,1021
-9002,Wayne371 - Expansion,appointmentscheduled,150000,Tom Becker,Sales Pipeline,2026-03-15,2025-12-20,2025-11-26,1012
-9003,Cyberdyne136 - New Business,contractsent,5000,Sarah Chen,Sales Pipeline,2026-01-22,2025-09-29,2026-07-23,1023
-9004,Globex88 - New Business,closedwon,12000,Sarah Chen,Sales Pipeline,2025-09-07,2025-05-11,2026-07-04,1018
-9005,Soylent524 - Renewal,appointmentscheduled,5000,Omar Haddad,Sales Pipeline,2025-12-19,2025-09-15,2026-07-25,1048
-9006,Initech286 - Expansion,contractsent,25000,,Sales Pipeline,2025-06-27,2025-05-22,2026-07-27,1026
-9007,Hooli241 - Upsell,closedlost,48000,Ingrid Larsen,Sales Pipeline,2025-09-05,2025-05-16,2026-07-05,1060
-9008,"Acme973, - Renewal",presentationscheduled,25000,Tom Becker,Sales Pipeline,2026-05-05,2026-03-23,2025-12-01,1088
-9009,Soylent271 - Upsell,qualifiedtobuy,,Omar Haddad,Sales Pipeline,2025-10-09,2025-08-13,2026-07-26,1005
-9010,Wayne371 - New Business,closedwon,150000,,Sales Pipeline,2026-01-22,2025-12-08,2026-07-05,1012
-9011,Stark286 - Renewal,contractsent,48000,Ingrid Larsen,Sales Pipeline,2026-04-17,2026-01-15,2026-07-18,1046
-9012,Hooli160 - Renewal,closedwon,5000,Ingrid Larsen,Sales Pipeline,,2026-06-25,2026-06-26,1004
-9013,Stark286 - New Business,qualifiedtobuy,150000,Ingrid Larsen,Sales Pipeline,2026-02-09,2026-04-20,2026-07-12,1046
-9014,Globex578 - Renewal,qualifiedtobuy,12000,Sarah Chen,Sales Pipeline,,2025-09-19,2026-07-14,1069
-9015,Initech500 - Expansion,closedlost,150000,Ingrid Larsen,Sales Pipeline,2025-07-03,2025-03-30,2026-06-23,1076
-9016,Wayne984 - Renewal,closedwon,,Omar Haddad,Sales Pipeline,2025-07-30,2025-05-08,2026-07-27,1073
-9017,Wayne371 - Upsell,closedwon,5000,Tom Becker,Sales Pipeline,2026-09-25,2026-06-30,2026-06-20,1012
-9018,Initech286 - Renewal,appointmentscheduled,5000,Tom Becker,Sales Pipeline,2025-08-19,2025-07-08,2026-04-04,1026
-9019,Initech500 - Renewal,appointmentscheduled,5000,Ingrid Larsen,Sales Pipeline,2026-07-07,2025-06-09,2026-06-17,1076
-9020,Initech197 - New Business,presentationscheduled,12000,Omar Haddad,Sales Pipeline,2026-04-08,2026-02-06,2026-06-19,1051
-9021,Stark306 - Renewal,qualifiedtobuy,12000,Omar Haddad,Sales Pipeline,2025-10-12,2025-07-13,2026-07-05,1063
-9022,Wayne575 - Expansion,contractsent,150000,Sarah Chen,Sales Pipeline,2026-06-17,2026-05-06,2026-03-12,1040
-9023,Soylent271 - New Business,closedlost,150000,Omar Haddad,Sales Pipeline,2025-07-02,2025-03-26,2026-06-28,1005
-9024,Initech272 - Renewal,closedwon,12000,Tom Becker,Sales Pipeline,2026-05-14,2026-03-11,2026-06-17,1019
-9025,Wayne363 - Renewal,presentationscheduled,12000,Omar Haddad,Sales Pipeline,2025-12-15,2025-11-24,2026-06-15,1082
-9026,Wonka389 - Expansion,appointmentscheduled,48000,Mei Tan,Sales Pipeline,2025-07-27,2025-07-07,2026-07-03,1009
-9027,Acme881 - Renewal,contractsent,90000,Sarah Chen,Sales Pipeline,2025-06-22,2025-04-15,2026-07-23,1022
-9028,Acme212 - Expansion,qualifiedtobuy,5000,Omar Haddad,Sales Pipeline,2026-07-04,2026-04-18,2026-07-28,1062
-9029,Cyberdyne152 - New Business,closedwon,48000,Tom Becker,Sales Pipeline,2026-08-05,2026-06-03,2026-07-25,1041
-9030,Gekko851 - Upsell,appointmentscheduled,150000,Sarah Chen,Sales Pipeline,2026-04-24,2026-01-18,2026-07-02,1071
-9031,Wayne925 - Expansion,closedlost,25000,Tom Becker,Sales Pipeline,2026-05-17,2026-04-21,2026-07-17,1084
-9032,Prestige923 - Renewal,presentationscheduled,12000,Sarah Chen,Sales Pipeline,2025-10-01,2025-08-06,2026-07-26,1053
-9033,Initech197 - Renewal,contractsent,5000,Omar Haddad,Sales Pipeline,2026-05-19,2026-04-23,2026-07-24,1051
-9034,Vandelay874 - Expansion,presentationscheduled,12000,Mei Tan,Sales Pipeline,2026-02-28,2026-03-30,2026-06-19,1038
-9035,Vandelay874 - Renewal,contractsent,48000,Mei Tan,Sales Pipeline,2025-06-07,2025-05-04,2026-06-28,1038
-9036,Acme212 - Upsell,closedlost,25000,Omar Haddad,Sales Pipeline,2026-06-13,2026-04-07,2026-07-01,1085
-9037,Vandelay634 - Renewal,closedlost,90000,Mei Tan,Sales Pipeline,,2026-02-26,2026-07-20,1006
-9038,"Gekko567, - Upsell",presentationscheduled,90000,Ingrid Larsen,Sales Pipeline,,2025-08-02,2026-01-05,1090
-9039,Stark215 - Upsell,contractsent,90000,Sarah Chen,Sales Pipeline,,2025-10-09,2026-06-29,1008
-9040,Acme4 - New Business,contractsent,5000,Sarah Chen,Sales Pipeline,2026-02-05,2025-10-26,2026-07-18,1039
-9041,Acme881 - Upsell,contractsent,5000,Sarah Chen,Sales Pipeline,2026-06-24,2026-05-07,2026-07-17,1022
-9042,Globex578 - Expansion,closedlost,5000,Omar Haddad,Sales Pipeline,2026-05-21,2026-01-28,2026-06-24,1081
-9043,Initech197 - Expansion,presentationscheduled,150000,Omar Haddad,Sales Pipeline,2026-01-03,2025-10-17,2026-07-22,1051
-9044,Prestige204 - Expansion,closedwon,25000,Sarah Chen,Sales Pipeline,2025-04-26,2025-03-24,2026-07-03,1054
-9045,Stark952 - Upsell,contractsent,5000,Sarah Chen,Sales Pipeline,2025-12-27,2025-09-21,2026-07-12,1034
-9046,Umbrella441 - Renewal,closedlost,150000,,Sales Pipeline,2026-08-30,2026-06-21,2026-07-26,1052
-9047,Gekko157 - Renewal,presentationscheduled,25000,Sarah Chen,Sales Pipeline,2026-09-01,2026-06-30,2026-06-28,1061
-9048,"Gekko567, - Upsell",qualifiedtobuy,25000,Ingrid Larsen,Sales Pipeline,2026-06-30,2026-05-03,2026-07-03,1090
-9049,Wonka662 - Upsell,qualifiedtobuy,150000,Omar Haddad,Sales Pipeline,2026-01-12,2025-11-26,2026-06-26,1078
-9050,Soylent524 - Upsell,qualifiedtobuy,12000,Omar Haddad,Sales Pipeline,2026-08-05,2026-06-07,2026-07-18,1048
-9051,Gekko348 - New Business,qualifiedtobuy,5000,Tom Becker,Sales Pipeline,2025-06-04,2025-05-08,2026-07-26,1025
-9052,Hooli183 - Upsell,presentationscheduled,150000,Sarah Chen,Sales Pipeline,2026-03-23,2026-01-03,2026-06-16,1047
-9053,Hooli160 - New Business,closedlost,48000,Ingrid Larsen,Sales Pipeline,2025-11-25,2025-09-09,2026-07-07,1004
-9054,Acme603 - Expansion,presentationscheduled,25000,Mei Tan,Sales Pipeline,2025-10-08,2025-06-22,2026-07-05,1021
-9055,Umbrella888 - New Business,closedwon,150000,Omar Haddad,Sales Pipeline,2025-06-15,2025-04-28,2026-07-12,1007
-9056,Wayne925 - Expansion,qualifiedtobuy,48000,Tom Becker,Sales Pipeline,2025-08-21,2025-04-24,2025-11-05,1084
-9057,Cyberdyne136 - Renewal,qualifiedtobuy,150000,Mei Tan,Sales Pipeline,2026-06-08,2026-03-03,2026-07-02,1023
-9058,Cyberdyne948 - Upsell,contractsent,25000,Ingrid Larsen,Sales Pipeline,2026-04-19,2026-03-03,2026-06-22,1049
-9059,Cyberdyne882 - Renewal,closedlost,25000,Sarah Chen,Sales Pipeline,2026-01-06,2025-09-26,2026-06-29,1014
-9060,Wonka389 - Renewal,closedlost,25000,Mei Tan,Sales Pipeline,2025-10-17,2025-08-17,2026-07-17,1009
-9061,Vandelay383 - Upsell,appointmentscheduled,150000,Mei Tan,Sales Pipeline,2026-04-12,2025-04-06,2026-06-16,1020
-9062,Globex88 - Upsell,contractsent,48000,Sarah Chen,Sales Pipeline,2026-04-03,2026-02-09,2025-10-25,1018
-9063,Umbrella769 - New Business,presentationscheduled,150000,Mei Tan,Sales Pipeline,2026-05-08,2026-01-16,2026-02-13,1075
-9064,Stark286 - New Business,qualifiedtobuy,25000,Ingrid Larsen,Sales Pipeline,2025-08-18,2025-05-06,2026-06-29,1046
-9065,Stark501 - Expansion,contractsent,12000,,Sales Pipeline,2025-09-27,2025-07-27,2026-03-16,1017
-9066,Wayne575 - Renewal,presentationscheduled,48000,Sarah Chen,Sales Pipeline,2026-02-23,2026-01-01,2026-06-29,1040
-9067,Umbrella888 - Expansion,appointmentscheduled,150000,Omar Haddad,Sales Pipeline,2025-12-25,2025-11-11,2026-06-26,1007
-9068,Acme4 - Renewal,closedwon,48000,Omar Haddad,Sales Pipeline,2026-06-15,2026-05-01,2026-07-20,1039
-9069,Cyberdyne152 - Upsell,qualifiedtobuy,,Tom Becker,Sales Pipeline,2025-07-07,2025-06-07,2026-07-09,1041
-9070,Wayne363 - New Business,closedlost,90000,Omar Haddad,Sales Pipeline,2026-04-07,2026-02-20,2026-06-28,1082
-9071,Wayne371 - Upsell,closedlost,48000,Tom Becker,Sales Pipeline,2025-11-02,2025-08-20,2026-07-05,1012
-9072,Vandelay115 - Expansion,closedwon,25000,Ingrid Larsen,Sales Pipeline,2025-09-06,2025-07-01,2026-07-28,1001
-9073,"Initech500, - Renewal",closedwon,25000,Ingrid Larsen,Sales Pipeline,2026-07-03,2026-03-17,2026-07-23,1087
-9074,Globex738 - Expansion,presentationscheduled,25000,Mei Tan,Sales Pipeline,2026-05-14,2026-04-16,2026-06-30,1050
-9075,Globex482 - New Business,presentationscheduled,25000,,Sales Pipeline,2026-03-17,2025-11-30,2026-07-07,1067
-9076,Gekko348 - New Business,closedlost,150000,Tom Becker,Sales Pipeline,2026-08-19,2026-07-01,2026-07-16,1025
-9077,Umbrella734 - Expansion,qualifiedtobuy,48000,Tom Becker,Sales Pipeline,2026-07-13,2026-05-08,2026-06-25,1003
-9078,Wonka278 - Expansion,closedwon,5000,Ingrid Larsen,Sales Pipeline,,2025-08-06,2026-07-03,1080
-9079,Umbrella940 - New Business,presentationscheduled,12000,Omar Haddad,Sales Pipeline,2026-02-27,2025-11-10,2026-07-10,1057
-9080,Prestige204 - New Business,contractsent,,Sarah Chen,Sales Pipeline,2026-03-27,2025-08-26,2026-06-27,1054
-9081,Wonka278 - Upsell,closedwon,12000,Ingrid Larsen,Sales Pipeline,2025-07-07,2025-06-04,2026-07-13,1080
-9082,Globex482 - Renewal,presentationscheduled,12000,Mei Tan,Sales Pipeline,2025-09-25,2025-07-15,2026-06-24,1067
-9083,Wonka30 - Expansion,contractsent,,Ingrid Larsen,Sales Pipeline,2026-03-13,2026-01-22,2026-07-22,1064
-9084,Wonka477 - Expansion,qualifiedtobuy,150000,Mei Tan,Sales Pipeline,2026-09-21,2026-05-25,2026-07-13,1074
-9085,Gekko348 - Expansion,closedlost,5000,Tom Becker,Sales Pipeline,2026-05-15,2026-02-25,2026-07-27,1083
-9086,Vandelay874 - Expansion,presentationscheduled,5000,Mei Tan,Sales Pipeline,2026-03-28,2025-12-04,2026-07-29,1038
-9087,Globex88 - Upsell,qualifiedtobuy,,Sarah Chen,Sales Pipeline,2026-03-29,2026-01-23,2026-07-24,1018
-9088,Soylent524 - Upsell,presentationscheduled,48000,Omar Haddad,Sales Pipeline,,2026-05-13,2026-07-05,1048
-9089,"Cyberdyne971, - Expansion",contractsent,12000,Sarah Chen,Sales Pipeline,2025-09-22,2025-08-12,2026-07-19,1089
-9090,Cyberdyne882 - Upsell,contractsent,12000,,Sales Pipeline,2025-08-26,2025-05-26,2026-07-07,1014
-9091,Umbrella314 - Expansion,closedwon,48000,Omar Haddad,Sales Pipeline,2026-01-26,2025-11-05,2026-07-27,1079
-9092,Wonka389 - New Business,closedlost,150000,Mei Tan,Sales Pipeline,2026-10-22,2026-07-04,2026-06-26,1009
-9093,Globex482 - New Business,appointmentscheduled,,Mei Tan,Sales Pipeline,2026-03-15,2025-12-01,2026-06-17,1067
-9094,"Initech500, - Expansion",qualifiedtobuy,5000,Ingrid Larsen,Sales Pipeline,2025-08-06,2025-05-07,2026-06-27,1087
-9095,Gekko157 - Upsell,qualifiedtobuy,25000,Sarah Chen,Sales Pipeline,2026-09-26,2026-06-02,2026-07-08,1061
-9096,Gekko310 - Upsell,closedwon,,Mei Tan,Sales Pipeline,2026-01-12,2025-10-02,2026-07-24,1036
-9097,Prestige254 - Upsell,contractsent,,Mei Tan,Sales Pipeline,2026-08-17,2026-05-26,2026-06-28,1059
-9098,Wayne925 - Expansion,closedlost,5000,Tom Becker,Sales Pipeline,2026-01-04,2025-12-11,2026-06-27,1084
-9099,Wayne678 - Expansion,closedlost,12000,Sarah Chen,Sales Pipeline,2026-03-24,2026-01-17,2026-07-08,1072
-9100,Wayne678 - Renewal,contractsent,150000,Sarah Chen,Sales Pipeline,2025-10-21,2025-07-09,2026-01-12,1072
-9101,Vandelay164 - Renewal,presentationscheduled,150000,Mei Tan,Sales Pipeline,,2026-07-09,2026-01-05,1013
-9102,Globex482 - Upsell,appointmentscheduled,12000,Mei Tan,Sales Pipeline,2026-07-28,2026-06-17,2026-07-23,1067
-9103,Vandelay734 - New Business,appointmentscheduled,48000,Tom Becker,Sales Pipeline,2026-02-10,2026-05-10,2026-07-08,1033
-9104,Cyberdyne882 - Expansion,presentationscheduled,48000,Sarah Chen,Sales Pipeline,2025-07-02,2025-03-23,2026-05-10,1014
-9105,Initech500 - Expansion,qualifiedtobuy,90000,Ingrid Larsen,Sales Pipeline,2025-11-17,2025-10-28,2026-06-22,1076
-9106,Acme212 - New Business,qualifiedtobuy,150000,Omar Haddad,Sales Pipeline,2025-10-23,2025-07-21,2026-07-23,1062
-9107,Globex738 - Upsell,presentationscheduled,90000,Mei Tan,Sales Pipeline,2026-01-02,2025-10-25,2026-07-12,1050
-9108,Initech197 - New Business,presentationscheduled,48000,Omar Haddad,Sales Pipeline,2025-12-28,2025-11-21,2026-06-15,1051
-9109,Gekko851 - Renewal,qualifiedtobuy,150000,,Sales Pipeline,2026-05-15,2026-03-30,2026-06-16,1071
-9110,Stark501 - Renewal,presentationscheduled,90000,Tom Becker,Sales Pipeline,2025-08-15,2025-07-12,2026-06-22,1017
-9111,Wonka477 - Renewal,contractsent,48000,Mei Tan,Sales Pipeline,2025-11-22,2025-07-30,2026-06-26,1074
-9112,Cyberdyne882 - Expansion,closedwon,12000,Sarah Chen,Sales Pipeline,2026-09-26,2026-06-13,2026-07-19,1014
-9113,Gekko567 - Renewal,qualifiedtobuy,12000,Ingrid Larsen,Sales Pipeline,2025-06-03,2025-05-07,2026-07-07,1037
-9114,Gekko914 - Upsell,closedwon,12000,Mei Tan,Sales Pipeline,2025-10-05,2025-06-25,2026-06-15,1058
-9115,Gekko310 - Renewal,closedlost,90000,Mei Tan,Sales Pipeline,2026-03-07,2025-12-24,2026-07-29,1086
-9116,Vandelay734 - Renewal,closedlost,90000,Tom Becker,Sales Pipeline,2025-06-29,2025-05-12,2026-07-17,1033
-9117,Vandelay874 - Expansion,qualifiedtobuy,48000,Mei Tan,Sales Pipeline,2026-05-18,2026-04-06,2026-05-06,1038
-9118,Gekko310 - Renewal,contractsent,5000,Mei Tan,Sales Pipeline,2026-07-22,2026-04-19,2025-12-24,1036
-9119,Vandelay383 - Renewal,closedlost,48000,,Sales Pipeline,2025-10-04,2025-09-08,2026-07-25,1020
-9120,Cyberdyne152 - New Business,contractsent,48000,Tom Becker,Sales Pipeline,2026-04-01,2025-10-17,2026-07-24,1041
+9001,Umbrella314 - Renewal,contractsent,48000,Mei Tan,Sales Pipeline,2026-08-24,2026-03-07,2026-07-27,1079
+9002,Gekko310 - New Business,qualifiedtobuy,150000,Mei Tan,Sales Pipeline,2026-11-14,2025-12-08,2026-07-07,1036
+9003,Acme119 - Upsell,presentationscheduled,,Ingrid Larsen,Sales Pipeline,2026-11-16,2025-06-05,2026-07-21,1046
+9004,Globex100 - New Business,closedwon,25000,Omar Haddad,Sales Pipeline,2025-11-27,2025-09-08,2026-07-13,1024
+9005,Acme119 - New Business,appointmentscheduled,,,Sales Pipeline,2026-10-16,2026-03-13,2026-07-12,1046
+9006,Stark167 - Upsell,presentationscheduled,12000,Ingrid Larsen,Sales Pipeline,2026-10-08,2026-03-20,2026-07-11,1008
+9007,Cyberdyne152 - Renewal,appointmentscheduled,150000,Omar Haddad,Sales Pipeline,2026-09-14,2025-07-18,2026-07-11,1041
+9008,Wayne746 - Upsell,presentationscheduled,12000,Ingrid Larsen,Sales Pipeline,2026-08-18,2025-05-22,2026-07-27,1025
+9009,Stark167 - Expansion,closedlost,5000,Ingrid Larsen,Sales Pipeline,2026-06-26,2026-03-20,2026-07-23,1008
+9010,Umbrella157 - Renewal,presentationscheduled,5000,Ingrid Larsen,Sales Pipeline,2026-10-12,2026-04-11,2026-05-12,1017
+9011,Prestige546 - Renewal,appointmentscheduled,25000,Tom Becker,Sales Pipeline,2026-09-03,2025-05-03,2026-07-19,1019
+9012,Acme4 - Upsell,closedlost,150000,Ingrid Larsen,Sales Pipeline,2026-06-02,2026-04-21,2026-07-07,1039
+9013,Cyberdyne664 - Renewal,qualifiedtobuy,150000,Ingrid Larsen,Sales Pipeline,2026-11-13,2025-03-22,2026-07-20,1072
+9014,"Initech522, - Expansion",qualifiedtobuy,90000,Omar Haddad,Sales Pipeline,2026-11-01,2026-04-11,2025-10-09,1089
+9015,Cyberdyne152 - New Business,appointmentscheduled,48000,Omar Haddad,Sales Pipeline,2026-11-01,2025-08-31,2026-07-06,1041
+9016,Vandelay333 - New Business,appointmentscheduled,150000,Sarah Chen,Sales Pipeline,2026-11-17,2026-01-28,2026-06-13,1010
+9017,Prestige959 - Expansion,closedlost,25000,Sarah Chen,Sales Pipeline,2025-11-10,2025-07-21,2026-07-29,1034
+9018,Vandelay234 - New Business,contractsent,48000,Omar Haddad,Sales Pipeline,2026-11-06,2025-12-08,2026-07-12,1007
+9019,Stark680 - New Business,closedwon,48000,Sarah Chen,Sales Pipeline,2025-12-01,2025-11-07,2026-07-20,1049
+9020,Cyberdyne617 - Expansion,closedlost,12000,Sarah Chen,Sales Pipeline,2026-06-27,2026-05-18,2026-07-06,1003
+9021,Vandelay333 - Expansion,qualifiedtobuy,90000,Sarah Chen,Sales Pipeline,2026-05-14,2025-04-07,2026-07-16,1010
+9022,Gekko556 - Upsell,closedwon,5000,Sarah Chen,Sales Pipeline,2025-06-12,2025-04-11,2026-07-23,1084
+9023,Wayne746 - Renewal,presentationscheduled,25000,Ingrid Larsen,Sales Pipeline,2026-09-02,2025-09-30,2026-07-28,1025
+9024,Umbrella441 - Upsell,qualifiedtobuy,5000,Mei Tan,Sales Pipeline,,2025-05-06,2026-07-16,1051
+9025,Initech253 - Upsell,appointmentscheduled,5000,Mei Tan,Sales Pipeline,2026-12-27,2025-08-06,2025-10-22,1012
+9026,Globex100 - Upsell,closedwon,25000,Omar Haddad,Sales Pipeline,2026-08-18,2026-05-30,2026-07-14,1082
+9027,Wayne336 - Upsell,closedwon,25000,Tom Becker,Sales Pipeline,2025-10-22,2025-08-16,2026-07-24,1085
+9028,Prestige254 - Upsell,closedlost,12000,,Sales Pipeline,2026-02-27,2025-11-27,2026-07-28,1058
+9029,Cyberdyne774 - Expansion,appointmentscheduled,150000,Tom Becker,Sales Pipeline,2026-12-25,2025-08-03,2026-07-16,1020
+9030,Wonka218 - Upsell,presentationscheduled,90000,Ingrid Larsen,Sales Pipeline,2026-09-07,2026-06-09,2026-03-08,1076
+9031,Acme212 - Expansion,closedwon,5000,Omar Haddad,Sales Pipeline,2026-01-31,2025-12-20,2026-07-24,1061
+9032,Wayne925 - Expansion,contractsent,5000,Sarah Chen,Sales Pipeline,2026-09-29,2026-05-07,2026-07-09,1028
+9033,Prestige546 - Renewal,appointmentscheduled,5000,Tom Becker,Sales Pipeline,2026-11-18,2026-02-28,2026-07-12,1019
+9034,Vandelay256 - Upsell,appointmentscheduled,150000,Sarah Chen,Sales Pipeline,2026-09-06,2025-10-17,2026-07-16,1042
+9035,Cyberdyne774 - Expansion,closedwon,90000,Tom Becker,Sales Pipeline,2026-01-10,2025-09-12,2026-07-20,1020
+9036,Soylent622 - Upsell,presentationscheduled,48000,,Sales Pipeline,,2025-04-17,2026-07-28,1069
+9037,Hooli686 - Upsell,closedwon,48000,Omar Haddad,Sales Pipeline,2026-08-14,2026-04-28,2026-07-22,1023
+9038,Vandelay234 - Renewal,appointmentscheduled,25000,Omar Haddad,Sales Pipeline,2026-10-27,2025-04-07,2026-07-21,1007
+9039,Acme399 - Expansion,qualifiedtobuy,12000,Ingrid Larsen,Sales Pipeline,2026-11-30,2025-07-25,2026-07-05,1063
+9040,Vandelay256 - Expansion,closedwon,48000,Sarah Chen,Sales Pipeline,2026-02-19,2025-12-09,2026-07-06,1042
+9041,Acme399 - Renewal,appointmentscheduled,90000,Ingrid Larsen,Sales Pipeline,2026-08-25,2025-04-22,2026-07-20,1063
+9042,Wayne336 - Expansion,appointmentscheduled,12000,Tom Becker,Sales Pipeline,2026-10-29,2025-06-06,2026-03-08,1065
+9043,Globex390 - Renewal,qualifiedtobuy,25000,Sarah Chen,Sales Pipeline,2026-12-05,2025-03-27,2026-07-13,1005
+9044,Umbrella441 - Expansion,qualifiedtobuy,25000,Mei Tan,Sales Pipeline,2026-12-01,2026-05-08,2026-07-24,1051
+9045,Acme212 - Renewal,qualifiedtobuy,25000,Omar Haddad,Sales Pipeline,2026-10-20,2026-01-12,2026-07-29,1061
+9046,Initech197 - New Business,closedwon,150000,Omar Haddad,Sales Pipeline,2025-08-13,2025-04-29,2026-07-23,1050
+9047,Hooli136 - Expansion,qualifiedtobuy,48000,Ingrid Larsen,Sales Pipeline,2026-05-25,2025-10-21,2026-07-10,1035
+9048,Gekko914 - Renewal,closedlost,48000,Tom Becker,Sales Pipeline,2025-07-27,2025-05-24,2026-07-15,1002
+9049,Vandelay734 - Upsell,closedwon,5000,Ingrid Larsen,Sales Pipeline,2026-05-08,2026-02-06,2026-07-09,1033
+9050,Cyberdyne971 - Expansion,contractsent,5000,Tom Becker,Sales Pipeline,2026-10-18,2026-02-08,2026-07-09,1077
+9051,Vandelay256 - Renewal,qualifiedtobuy,12000,Sarah Chen,Sales Pipeline,2026-09-03,2026-02-27,2026-02-15,1042
+9052,Wonka813 - New Business,appointmentscheduled,150000,Tom Becker,Sales Pipeline,2026-10-23,2025-07-27,2026-07-21,1052
+9053,Wayne908 - Expansion,qualifiedtobuy,25000,Mei Tan,Sales Pipeline,2026-12-23,2025-06-28,2026-07-09,1054
+9054,Acme212 - Renewal,presentationscheduled,,Omar Haddad,Sales Pipeline,2026-03-18,2025-08-01,2026-07-26,1061
+9055,Acme212 - New Business,qualifiedtobuy,150000,Omar Haddad,Sales Pipeline,2026-04-27,2026-02-28,2026-07-18,1061
+9056,Wayne714 - Upsell,presentationscheduled,25000,Mei Tan,Sales Pipeline,2026-10-23,2026-02-03,2026-07-15,1029
+9057,Gekko897 - Expansion,contractsent,12000,Ingrid Larsen,Sales Pipeline,2026-11-14,2025-04-23,2026-07-13,1016
+9058,Acme4 - New Business,qualifiedtobuy,12000,Ingrid Larsen,Sales Pipeline,2026-11-21,2025-04-21,2026-07-11,1039
+9059,Hooli241 - New Business,closedwon,48000,Ingrid Larsen,Sales Pipeline,,2025-04-25,2026-07-24,1059
+9060,Cyberdyne152 - Upsell,presentationscheduled,12000,Omar Haddad,Sales Pipeline,2026-09-18,2026-07-08,2026-07-14,1041
+9061,Initech253 - Upsell,closedlost,48000,Mei Tan,Sales Pipeline,2026-02-07,2025-11-30,2026-07-29,1012
+9062,Globex390 - Renewal,qualifiedtobuy,25000,Sarah Chen,Sales Pipeline,2026-07-19,2025-07-01,2026-07-08,1005
+9063,Vandelay115 - New Business,presentationscheduled,25000,Sarah Chen,Sales Pipeline,2026-09-04,2026-03-05,2026-07-17,1001
+9064,Wayne336 - Expansion,appointmentscheduled,25000,Tom Becker,Sales Pipeline,2026-12-03,2026-04-16,2026-07-06,1065
+9065,Vandelay42 - Upsell,qualifiedtobuy,25000,Sarah Chen,Sales Pipeline,,2026-01-19,2026-07-05,1067
+9066,Wayne746 - Upsell,closedwon,,Ingrid Larsen,Sales Pipeline,2025-07-24,2025-04-02,2026-07-25,1025
+9067,Wayne925 - New Business,appointmentscheduled,25000,Sarah Chen,Sales Pipeline,2026-11-13,2025-09-12,2026-07-09,1028
+9068,Vandelay734 - Expansion,appointmentscheduled,150000,Ingrid Larsen,Sales Pipeline,2026-08-14,2025-08-25,2026-07-28,1033
+9069,"Initech522, - Upsell",qualifiedtobuy,90000,Omar Haddad,Sales Pipeline,2026-11-17,2025-11-25,2026-04-07,1089
+9070,Cyberdyne774 - Expansion,closedlost,48000,Tom Becker,Sales Pipeline,2025-11-05,2025-07-24,2026-07-13,1020
+9071,Hooli136 - New Business,appointmentscheduled,5000,Ingrid Larsen,Sales Pipeline,2026-10-01,2025-07-17,2026-01-10,1035
+9072,Globex395 - New Business,contractsent,90000,Omar Haddad,Sales Pipeline,2026-10-26,2025-09-02,2025-12-29,1014
+9073,Prestige204 - Upsell,closedwon,150000,,Sales Pipeline,2026-08-21,2026-06-20,2026-07-22,1053
+9074,Vandelay115 - Expansion,closedlost,12000,,Sales Pipeline,2026-09-22,2026-05-26,2026-07-13,1001
+9075,Vandelay333 - Renewal,contractsent,48000,Sarah Chen,Sales Pipeline,2026-03-28,2026-05-20,2026-07-15,1010
+9076,Vandelay234 - Expansion,presentationscheduled,25000,,Sales Pipeline,2026-11-26,2025-04-19,2026-07-06,1007
+9077,Cyberdyne769 - Expansion,closedwon,12000,Ingrid Larsen,Sales Pipeline,,2025-06-17,2026-07-18,1015
+9078,Stark973 - Expansion,presentationscheduled,,Omar Haddad,Sales Pipeline,2026-09-07,2026-02-23,2026-07-17,1057
+9079,Wonka813 - Upsell,contractsent,,Tom Becker,Sales Pipeline,2026-09-06,2026-02-21,2026-07-25,1052
+9080,"Wayne925, - New Business",appointmentscheduled,48000,Sarah Chen,Sales Pipeline,2026-11-29,2025-05-04,2026-07-24,1090
+9081,Umbrella314 - Expansion,qualifiedtobuy,48000,Mei Tan,Sales Pipeline,2026-09-06,2026-01-08,2026-07-16,1079
+9082,Stark973 - Renewal,closedwon,150000,Omar Haddad,Sales Pipeline,2026-06-12,2026-02-27,2026-07-19,1057
+9083,Vandelay42 - Expansion,presentationscheduled,,Sarah Chen,Sales Pipeline,2026-05-01,2025-07-17,2026-07-18,1067
+9084,Wayne336 - New Business,appointmentscheduled,5000,Tom Becker,Sales Pipeline,2026-12-16,2025-12-25,2026-07-14,1085
+9085,Soylent679 - Upsell,presentationscheduled,12000,Sarah Chen,Sales Pipeline,2026-10-19,2026-06-02,2026-07-28,1064
+9086,Wayne336 - Upsell,qualifiedtobuy,12000,Tom Becker,Sales Pipeline,2026-09-25,2025-08-15,2026-03-25,1065
+9087,Wayne846 - Upsell,contractsent,25000,Mei Tan,Sales Pipeline,2026-12-14,2025-04-28,2026-07-06,1074
+9088,Gekko556 - Upsell,presentationscheduled,90000,Sarah Chen,Sales Pipeline,2026-09-14,2025-12-16,2026-06-10,1084
+9089,Wonka278 - New Business,appointmentscheduled,25000,Ingrid Larsen,Sales Pipeline,2026-06-06,2025-04-11,2026-07-22,1080
+9090,Hooli241 - Upsell,closedlost,150000,Ingrid Larsen,Sales Pipeline,,2025-06-13,2026-07-26,1059
+9091,Wayne336 - Renewal,closedlost,90000,Tom Becker,Sales Pipeline,2026-05-06,2026-01-17,2026-07-26,1085
+9092,Globex997 - New Business,contractsent,5000,Omar Haddad,Sales Pipeline,2026-09-28,2025-10-31,2026-07-23,1006
+9093,Gekko897 - New Business,contractsent,12000,Ingrid Larsen,Sales Pipeline,2026-09-05,2025-12-21,2026-07-05,1016
+9094,Wayne908 - Expansion,closedlost,48000,Mei Tan,Sales Pipeline,2025-11-11,2025-08-20,2026-07-29,1054
+9095,Wonka686 - Upsell,contractsent,90000,Sarah Chen,Sales Pipeline,2026-09-22,2025-09-30,2026-07-06,1068
+9096,Umbrella157 - Renewal,closedlost,48000,Ingrid Larsen,Sales Pipeline,2025-10-02,2025-08-08,2026-07-17,1017
+9097,Wonka228 - New Business,qualifiedtobuy,48000,Tom Becker,Sales Pipeline,2026-12-27,2025-11-21,2026-07-19,1044
+9098,Prestige309 - New Business,presentationscheduled,150000,Mei Tan,Sales Pipeline,2026-09-11,2026-03-30,2026-07-07,1071
+9099,Gekko556 - Renewal,appointmentscheduled,25000,,Sales Pipeline,2026-11-23,2026-04-10,2026-07-08,1084
+9100,Soylent622 - Upsell,presentationscheduled,90000,Sarah Chen,Sales Pipeline,2026-11-22,2025-05-03,2026-02-27,1069
+9101,Prestige546 - New Business,closedlost,12000,Tom Becker,Sales Pipeline,2026-09-27,2026-06-12,2026-07-21,1019
+9102,Prestige546 - Renewal,qualifiedtobuy,90000,Tom Becker,Sales Pipeline,2026-02-26,2025-07-22,2026-07-15,1019
+9103,Globex395 - New Business,presentationscheduled,12000,Omar Haddad,Sales Pipeline,2026-10-24,2025-07-30,2026-04-03,1014
+9104,Initech197 - Renewal,appointmentscheduled,5000,Omar Haddad,Sales Pipeline,2026-09-29,2025-06-02,2026-07-10,1050
+9105,Stark973 - Renewal,appointmentscheduled,150000,Omar Haddad,Sales Pipeline,2026-05-10,2025-03-31,2026-07-15,1057
+9106,Hooli686 - New Business,appointmentscheduled,150000,Omar Haddad,Sales Pipeline,2026-09-18,2026-06-02,2025-10-16,1023
+9107,Gekko6 - New Business,closedwon,90000,Sarah Chen,Sales Pipeline,,2026-02-25,2026-07-19,1055
+9108,Gekko157 - Expansion,qualifiedtobuy,25000,Tom Becker,Sales Pipeline,2026-10-25,2026-04-22,2026-07-14,1060
+9109,Wayne846 - Renewal,qualifiedtobuy,,Mei Tan,Sales Pipeline,2026-12-16,2026-06-03,2026-07-24,1074
+9110,Wayne908 - Expansion,presentationscheduled,,Mei Tan,Sales Pipeline,2026-11-01,2025-12-16,2026-07-19,1054
+9111,Prestige322 - Upsell,contractsent,5000,Omar Haddad,Sales Pipeline,2026-05-11,2025-06-20,2026-07-22,1047
+9112,Initech286 - New Business,appointmentscheduled,150000,Omar Haddad,Sales Pipeline,,2025-08-26,2026-07-26,1083
+9113,Initech197 - Renewal,closedwon,90000,Omar Haddad,Sales Pipeline,2025-09-28,2025-07-05,2026-07-13,1050
+9114,Prestige254 - New Business,presentationscheduled,90000,Ingrid Larsen,Sales Pipeline,2026-09-02,2026-02-09,2026-07-24,1058
+9115,Soylent622 - Expansion,qualifiedtobuy,,Sarah Chen,Sales Pipeline,2026-11-25,2025-08-24,2026-07-26,1069
+9116,Cyberdyne857 - Upsell,appointmentscheduled,150000,Sarah Chen,Sales Pipeline,2026-08-15,2025-07-16,2026-07-15,1027
+9117,Acme184 - Expansion,closedwon,25000,Ingrid Larsen,Sales Pipeline,2026-09-04,2026-06-03,2026-07-22,1043
+9118,Prestige959 - Upsell,contractsent,25000,Sarah Chen,Sales Pipeline,2026-11-16,2025-11-22,2026-07-08,1034
+9119,Gekko897 - Expansion,appointmentscheduled,150000,Ingrid Larsen,Sales Pipeline,2026-11-08,2025-08-16,2026-07-13,1016
+9120,Globex395 - Renewal,appointmentscheduled,25000,,Sales Pipeline,2026-07-01,2025-07-24,2026-07-17,1014

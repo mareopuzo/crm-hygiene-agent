@@ -70,11 +70,23 @@ It's **deterministic** (seeded), so the demo and tests are reproducible:
 python data/generate_sample.py --seed 42 --contacts 250 --companies 80 --deals 120
 ```
 
+The manifest is *exact*, not approximate — two properties make it so. Base records are clean by construction (emails and domains are de-duplicated as they're generated, so random name collisions can't create accidental duplicates), and a `Planter` tracks which columns of which records are already spoken for, so no plant can silently clobber an earlier one. That's what lets the tests assert **set equality** between what each check flags and what was planted — proving no false negatives *and* no false positives at once, rather than "it found most of them."
+
+## Testing
+
+```bash
+python -m pytest -q      # 55 tests
+```
+
+Every check is verified against the ground-truth manifest, plus hand-built edge cases: threshold boundaries, legitimate-but-unusual TLDs (`.co` is one edit from `.com` and must not be flagged), blank-vs-wrong distinctions, and a guarantee that no check mutates its input.
+
+**No double-counting.** Each check owns exactly one failure mode. A blank owner is reported once by the missing-fields policy — the routing check deliberately skips unowned records rather than flagging them again, so one underlying problem never inflates the score twice.
+
 ## Build status
 
 - [x] **Step 1 — Sample data generator** (HubSpot-shaped CSVs + ground-truth manifest)
 - [x] **Step 2 — Loader + core models** (`Finding`, `Check` contract, `Config`, HubSpot schema normalization; 8 tests)
-- [ ] Step 3 — Checks (duplicates → missing fields → decay → routing → stale deals)
+- [x] **Step 3 — All 11 checks** (duplicates, missing fields, decay, routing, stale deals; 55 tests)
 - [ ] Step 4 — Scoring + \$ impact model + report
 - [ ] Step 5 — Streamlit app
 - [ ] Step 6 — Deploy (live link)
