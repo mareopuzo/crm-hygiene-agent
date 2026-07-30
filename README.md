@@ -73,7 +73,7 @@ python data/generate_sample.py --seed 42 --contacts 250 --companies 80 --deals 1
 ## Build status
 
 - [x] **Step 1 — Sample data generator** (HubSpot-shaped CSVs + ground-truth manifest)
-- [ ] Step 2 — Loader + core models (`Finding`, `Check` contract)
+- [x] **Step 2 — Loader + core models** (`Finding`, `Check` contract, `Config`, HubSpot schema normalization; 8 tests)
 - [ ] Step 3 — Checks (duplicates → missing fields → decay → routing → stale deals)
 - [ ] Step 4 — Scoring + \$ impact model + report
 - [ ] Step 5 — Streamlit app
