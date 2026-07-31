@@ -179,10 +179,32 @@ hourly_rate = st.sidebar.number_input(
     help="Fully loaded, not salary: roughly a $120k all-in rep across ~1,600 productive hours.",
 )
 
-report = build(
-    contacts_bytes, companies_bytes, deals_bytes, as_of,
-    stale_days, round(decay_months * 30.44), hourly_rate, routing_enabled,
-)
+# A public demo must never answer a bad file with a stack trace. Anything the
+# engine can't handle becomes an explanation of what to check, with the
+# technical detail tucked behind a disclosure for whoever is debugging it.
+try:
+    report = build(
+        contacts_bytes, companies_bytes, deals_bytes, as_of,
+        stale_days, round(decay_months * 30.44), hourly_rate, routing_enabled,
+    )
+except Exception as exc:  # noqa: BLE001 — the UI boundary catches everything
+    st.title("CRM Hygiene Agent")
+    st.error("I couldn't read that data. The audit didn't run.")
+    st.markdown(
+        """
+**Worth checking:**
+
+- The files are **CSV**, exported from HubSpot (not Excel `.xlsx`).
+- Each file still has its **header row** — that's how columns are recognized.
+- There's a **Record ID** column. Every finding is reported against it.
+- The right file went in the right slot (contacts in Contacts, deals in Deals).
+
+Switch the sidebar to **Sample CRM** to confirm the app itself is working.
+        """
+    )
+    with st.expander("Technical details"):
+        st.exception(exc)
+    st.stop()
 
 
 # --------------------------------------------------------------------------- #
