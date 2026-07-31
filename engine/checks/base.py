@@ -155,6 +155,13 @@ def blank(series: pd.Series) -> pd.Series:
 
     The loader already turns "" into NA, so this is mostly isna() — but it also
     catches whitespace-only strings that slipped through a non-loader path.
+
+    The explicit `astype(bool)` is load-bearing: on an empty frame `map` yields
+    an object-dtype series, and pandas reads an object-dtype key as a list of
+    *column* labels rather than a row filter — so `df[blank(df[col])]` raises a
+    KeyError instead of returning no rows. That happens whenever an object type
+    is absent from an upload, which the app explicitly supports.
     """
     filled = series.astype("object").where(series.notna(), None)
-    return filled.map(lambda v: v is None or str(v).strip() == "")
+    mask = filled.map(lambda v: v is None or str(v).strip() == "")
+    return mask.astype(bool)
