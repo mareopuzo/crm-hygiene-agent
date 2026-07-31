@@ -42,6 +42,24 @@ So it's split in two. **Countries → regions** ships built in — a world atlas
 
 Reading the names from the data rather than having you type them removes the failure mode that matters here — a name that doesn't quite match the export would silently disable the check for that rep, and a check reporting zero because it was never configured looks exactly like a check reporting zero because everything is fine. Unassigned owners are skipped rather than guessed at, and the app says so on the report instead of implying your routing is clean.
 
+## Why not just use HubSpot's built-in tools?
+
+Fair question, and part of the answer is: if you have them, use them.
+
+HubSpot ships real data-quality tooling — a Data Quality Command Center, duplicate management, formatting automations, deal-rot settings on pipelines. Where it's stronger than this, it's genuinely stronger: it works on live data instead of an export, it can write changes back, and its duplicate matching is more sophisticated than the exact-and-normalized matching here. Anyone already on Operations Hub Professional should be using it.
+
+Three gaps this fills:
+
+**1. It quantifies.** HubSpot shows you a list of issues. It doesn't tell you that list represents ~42 hours of avoidable work and $924,750 of pipeline whose timing can't be trusted. Data hygiene competes for attention against every other item on a RevOps roadmap, and without a number attached it loses that fight every quarter.
+
+**2. It prioritizes.** "Here is everything wrong" is not a plan. This ranks categories by what fixing them is worth and states what each recovers on the score, so the first hour of cleanup goes to the right place — and the score gives you something to trend in a QBR.
+
+**3. It travels.** Most of that tooling sits in paid Operations Hub tiers, and all of it only works inside HubSpot. This runs on a CSV: it works on a free portal, works for a consultant with no portal access, works before a migration, and works on any export with a similar shape.
+
+The rules are also legible. Every threshold is a value in `engine/config.py` and every dollar figure is arithmetic you can follow, so when someone challenges a finding you can show them the line rather than shrugging at a vendor's black box.
+
+**The honest framing:** this isn't a replacement for HubSpot's tooling. It's the quantification layer nobody ships — turning *"our CRM is messy"* into *"here's the number, here's what to fix first, and here's what it recovers."*
+
 ## The output
 
 ```
