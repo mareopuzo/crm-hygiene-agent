@@ -23,6 +23,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from engine.models import COMPANIES, CONTACTS, DEALS, Severity
+from engine.territories import DEFAULT_REGION_COUNTRIES
 
 
 @dataclass
@@ -85,20 +86,27 @@ class Config:
     )
 
     # --- Routing policy ---
-    # Owner -> the region their book covers. Used by the routing check to spot
-    # contacts/companies whose country sits outside their owner's region.
-    # Empty by default: routing-by-territory is opt-in, because not every org
-    # routes geographically. The sample data uses the map below.
+    # Two halves, and only one of them is company-specific:
+    #
+    #   region_countries — which countries make up each region. Ships populated
+    #     from the built-in atlas, because nobody should have to type out EMEA
+    #     before they can run a check. Replace it to use a different cut.
+    #
+    #   owner_regions — which region each rep covers. Necessarily empty: the
+    #     tool cannot know a company's team. Until it's supplied the routing
+    #     check stays silent rather than guessing.
     owner_regions: dict[str, str] = field(default_factory=dict)
-    region_countries: dict[str, list[str]] = field(default_factory=dict)
+    region_countries: dict[str, list[str]] = field(
+        default_factory=lambda: {k: list(v) for k, v in DEFAULT_REGION_COUNTRIES.items()}
+    )
 
     @property
     def territory_routing_enabled(self) -> bool:
         return bool(self.owner_regions and self.region_countries)
 
 
-# The territory map that matches data/generate_sample.py, provided as a
-# convenience so the demo exercises the routing check out of the box.
+# The rep→region map for the bundled sample data, so the demo exercises the
+# routing check out of the box. A real portal's owners are supplied by the user.
 SAMPLE_OWNER_REGIONS = {
     "Sarah Chen": "North America",
     "Tom Becker": "North America",
@@ -106,6 +114,8 @@ SAMPLE_OWNER_REGIONS = {
     "Omar Haddad": "EMEA",
     "Mei Tan": "APAC",
 }
+# Kept for reference and tests: the exact regions the sample generator uses.
+# The shipped atlas assigns these same ten countries the same way.
 SAMPLE_REGION_COUNTRIES = {
     "North America": ["United States", "Canada", "Mexico"],
     "EMEA": ["United Kingdom", "Germany", "France", "United Arab Emirates"],
@@ -114,11 +124,8 @@ SAMPLE_REGION_COUNTRIES = {
 
 
 def default_config() -> Config:
-    """The locked defaults, with sample territory routing pre-wired."""
-    return Config(
-        owner_regions=dict(SAMPLE_OWNER_REGIONS),
-        region_countries={k: list(v) for k, v in SAMPLE_REGION_COUNTRIES.items()},
-    )
+    """The locked defaults, with the sample's rep map pre-wired."""
+    return Config(owner_regions=dict(SAMPLE_OWNER_REGIONS))
 
 
 def build_config(
@@ -126,6 +133,7 @@ def build_config(
     stale_deal_days: int = Config.stale_deal_days,
     decayed_contact_days: int = Config.decayed_contact_days,
     territory_routing: bool = True,
+    owner_regions: dict[str, str] | None = None,
 ) -> Config:
     """
     Assemble a Config from the handful of knobs a UI exposes.
@@ -133,8 +141,20 @@ def build_config(
     Lives here rather than in the app so the wiring between a control and the
     policy it drives is testable — a slider that silently fails to change
     anything is the kind of bug a demo doesn't reveal.
+
+    `owner_regions` is the one piece the tool can't supply for itself. Passing
+    an empty map leaves routing inactive, which is the honest default for a
+    portal whose team we've never seen.
     """
-    config = default_config() if territory_routing else Config()
+    config = Config()
     config.stale_deal_days = stale_deal_days
     config.decayed_contact_days = decayed_contact_days
+
+    if not territory_routing:
+        config.owner_regions = {}
+    elif owner_regions is not None:
+        config.owner_regions = {o: r for o, r in owner_regions.items() if o and r}
+    else:
+        config.owner_regions = dict(SAMPLE_OWNER_REGIONS)
+
     return config

@@ -34,6 +34,14 @@ The killer detail: most teams can't even *measure* how bad it is, so it never ge
 | **Stale deals** | Open deals past age / close date with no activity | Inflated forecast, pipeline hygiene |
 | **Report** | Health score + \$ impact + prioritized punch list | Makes all of the above actionable |
 
+### Territory routing needs to learn your team
+
+Routing is the one check that can't work out of the box, because it depends on something no tool can know: **which region each of your reps covers.**
+
+So it's split in two. **Countries → regions** ships built in — a world atlas covering ~120 countries, with the spellings real exports actually contain (`USA`, `U.S.`, `United States` and `America` all resolve to the same place). **Reps → regions** is yours: the app reads the owner names straight out of your upload and asks you to assign each one from a dropdown.
+
+Reading the names from the data rather than having you type them removes the failure mode that matters here — a name that doesn't quite match the export would silently disable the check for that rep, and a check reporting zero because it was never configured looks exactly like a check reporting zero because everything is fine. Unassigned owners are skipped rather than guessed at, and the app says so on the report instead of implying your routing is clean.
+
 ## The output
 
 ```

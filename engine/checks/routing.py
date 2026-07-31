@@ -16,6 +16,12 @@ from __future__ import annotations
 
 from engine.checks.base import blank
 from engine.models import COMPANIES, CONTACTS, CRMData, Finding, Severity
+from engine.territories import (
+    build_country_region_index,
+    build_owner_region_index,
+    normalize_country_key,
+    normalize_person_key,
+)
 
 _OBJECT_LABELS = {CONTACTS: "Contact", COMPANIES: "Company"}
 
@@ -35,12 +41,13 @@ class TerritoryRoutingCheck:
         df = data.frame(self.object_type)
         label = _OBJECT_LABELS.get(self.object_type, self.object_type)
 
-        # country -> region, inverted from the config's region -> [countries].
-        country_to_region = {
-            country: region
-            for region, countries in config.region_countries.items()
-            for country in countries
-        }
+        # Both sides are matched on normalized keys rather than raw text, so a
+        # portal that exports "USA" and another that exports "United States"
+        # resolve identically. A silent match failure here doesn't raise an
+        # error — it just quietly disables the check for that record — so the
+        # tolerance is doing real work.
+        country_to_region = build_country_region_index(config.region_countries)
+        owner_to_region = build_owner_region_index(config.owner_regions)
 
         # Only rows where both sides of the comparison are present are
         # evaluable; the rest belong to the missing-fields check.
@@ -50,8 +57,8 @@ class TerritoryRoutingCheck:
         for record_id, owner, country in zip(
             evaluable["record_id"], evaluable["owner"], evaluable["country"]
         ):
-            owner_region = config.owner_regions.get(str(owner).strip())
-            record_region = country_to_region.get(str(country).strip())
+            owner_region = owner_to_region.get(normalize_person_key(owner))
+            record_region = country_to_region.get(normalize_country_key(country))
 
             # An owner or country we have no mapping for isn't a mismatch —
             # it's an unknown, and guessing would manufacture false positives.

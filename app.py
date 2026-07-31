@@ -24,12 +24,17 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from engine.config import build_config
+from engine.config import SAMPLE_OWNER_REGIONS, build_config
 from engine.loader import load_crm_data
+from engine.models import COMPANIES, CONTACTS, DEALS
 from engine.report import build_report
 from engine.scoring import ImpactAssumptions
+from engine.territories import DEFAULT_REGIONS
 
 SAMPLES = Path(__file__).parent / "data" / "samples"
+
+# Shown in the region dropdown for a rep whose territory hasn't been set.
+UNASSIGNED = "— not set —"
 
 # Status palette, paired with a word so colour is never the only signal.
 GRADE_STATUS = {
@@ -110,13 +115,38 @@ def load_sample() -> tuple[bytes, bytes, bytes, str | None]:
 
 
 @st.cache_data(show_spinner=False)
-def build(contacts, companies, deals, as_of, stale_days, decay_days, hourly_rate, routing):
-    """Cached end-to-end run. Keyed on the raw bytes plus every tunable."""
-    data = load_crm_data(contacts, companies, deals, as_of=as_of)
+def load(contacts, companies, deals, as_of):
+    """Parse the uploads once. Separate from `build` so the owner names can be
+    read out of the data before the audit runs — the territory editor needs
+    them to know who to ask about."""
+    return load_crm_data(contacts, companies, deals, as_of=as_of)
+
+
+@st.cache_data(show_spinner=False)
+def owners_in(contacts, companies, deals, as_of) -> list[str]:
+    """Every distinct rep name appearing across the three objects."""
+    data = load(contacts, companies, deals, as_of)
+    names: set[str] = set()
+    for object_type in (CONTACTS, COMPANIES, DEALS):
+        column = data.frame(object_type)["owner"].dropna()
+        names.update(str(v).strip() for v in column if str(v).strip())
+    return sorted(names)
+
+
+@st.cache_data(show_spinner=False)
+def build(contacts, companies, deals, as_of, stale_days, decay_days,
+          hourly_rate, routing, owner_region_pairs):
+    """Cached end-to-end run. Keyed on the raw bytes plus every tunable.
+
+    `owner_region_pairs` arrives as a tuple so it can be part of the cache key
+    — a dict isn't hashable, and silently dropping it from the key would serve
+    a stale report after the territory map changed."""
+    data = load(contacts, companies, deals, as_of)
     config = build_config(
         stale_deal_days=stale_days,
         decayed_contact_days=decay_days,
         territory_routing=routing,
+        owner_regions=dict(owner_region_pairs),
     )
     return build_report(data, config, ImpactAssumptions(loaded_rep_hourly_cost=hourly_rate))
 
@@ -179,6 +209,86 @@ hourly_rate = st.sidebar.number_input(
     help="Fully loaded, not salary: roughly a $120k all-in rep across ~1,600 productive hours.",
 )
 
+st.title("CRM Hygiene Agent")
+
+# --------------------------------------------------------------------------- #
+# Territory map
+#
+# The half of routing the tool can't know: which region each rep covers. The
+# countries come from a built-in atlas, so all a user supplies is their own
+# team. Owner names are read out of the uploaded file rather than typed, which
+# removes the commonest failure — a name that doesn't quite match the export
+# and silently disables the check for that rep.
+#
+# Rendered before the audit because the map is an input to it — Streamlit runs
+# top to bottom, so the setup has to precede the run that consumes it.
+# --------------------------------------------------------------------------- #
+
+owner_region_pairs: tuple[tuple[str, str], ...] = ()
+detected_owners: list[str] = []
+
+if routing_enabled:
+    try:
+        detected_owners = owners_in(contacts_bytes, companies_bytes, deals_bytes, as_of)
+    except Exception:
+        detected_owners = []  # unreadable file — the audit below reports it properly
+
+    if detected_owners:
+        # The bundled sample ships with its map filled in so the demo works on
+        # first click; a real upload starts blank because we've never seen the team.
+        presets = SAMPLE_OWNER_REGIONS if source == "Sample CRM" else {}
+        saved = st.session_state.get("territory_map", {})
+
+        editor_rows = pd.DataFrame({
+            "Owner": detected_owners,
+            "Region": [saved.get(o, presets.get(o, UNASSIGNED)) for o in detected_owners],
+        })
+
+        already_assigned = sum(1 for o in detected_owners
+                               if saved.get(o, presets.get(o, UNASSIGNED)) != UNASSIGNED)
+
+        with st.expander(
+            "🗺️ Territory map — tell routing who covers which region",
+            expanded=already_assigned == 0,
+        ):
+            st.caption(
+                "Routing compares each record's country against the region its owner covers. "
+                "Countries come from a built-in atlas — you only tell it who covers what. "
+                "Owners left unassigned are skipped rather than guessed at."
+            )
+            edited = st.data_editor(
+                editor_rows,
+                hide_index=True,
+                width="stretch",
+                disabled=["Owner"],
+                column_config={
+                    "Owner": st.column_config.TextColumn("Owner (from your data)"),
+                    "Region": st.column_config.SelectboxColumn(
+                        "Covers region",
+                        options=[UNASSIGNED, *DEFAULT_REGIONS],
+                        required=True,
+                    ),
+                },
+                key="territory_editor",
+            )
+
+            mapping = {
+                row["Owner"]: row["Region"]
+                for _, row in edited.iterrows()
+                if row["Region"] and row["Region"] != UNASSIGNED
+            }
+
+            # Reported from the edited table rather than the pre-render state,
+            # so the count reflects the assignment just made instead of lagging
+            # a step behind it.
+            if mapping:
+                st.success(f"{len(mapping)} of {len(detected_owners)} owners assigned — routing is active.")
+            else:
+                st.info("No owners assigned yet — territory routing is inactive.")
+
+        st.session_state["territory_map"] = mapping
+        owner_region_pairs = tuple(sorted(mapping.items()))
+
 # A public demo must never answer a bad file with a stack trace. Anything the
 # engine can't handle becomes an explanation of what to check, with the
 # technical detail tucked behind a disclosure for whoever is debugging it.
@@ -186,9 +296,9 @@ try:
     report = build(
         contacts_bytes, companies_bytes, deals_bytes, as_of,
         stale_days, round(decay_months * 30.44), hourly_rate, routing_enabled,
+        owner_region_pairs,
     )
 except Exception as exc:  # noqa: BLE001 — the UI boundary catches everything
-    st.title("CRM Hygiene Agent")
     st.error("I couldn't read that data. The audit didn't run.")
     st.markdown(
         """
@@ -211,7 +321,6 @@ Switch the sidebar to **Sample CRM** to confirm the app itself is working.
 # Header
 # --------------------------------------------------------------------------- #
 
-st.title("CRM Hygiene Agent")
 st.caption(
     f"Audited {report.score.total_records:,} records with {report.checks_run} checks · "
     f"reference date {report.as_of.date()}"
@@ -219,6 +328,18 @@ st.caption(
 
 if source == "Sample CRM":
     st.caption("Showing synthetic HubSpot-shaped sample data with a known set of planted issues.")
+
+# Say so out loud when routing is switched on but has nothing to work with.
+# A check that reports zero because it was never configured looks identical to
+# a check that reports zero because everything is fine — and quietly telling
+# someone their routing is clean when it was never examined is the worst
+# failure this tool could have.
+if routing_enabled and detected_owners and not owner_region_pairs:
+    st.warning(
+        f"**Territory routing found nothing because it hasn't been set up.** "
+        f"Your data has {len(detected_owners)} owners and none are assigned to a region yet — "
+        "open the **Territory map** above and assign them, or switch the check off in the sidebar."
+    )
 
 st.markdown(f'<div class="headline">{report.headline}</div>', unsafe_allow_html=True)
 
