@@ -103,7 +103,15 @@ class EmailDeliverabilityCheck:
                     severity=Severity.HIGH,
                     message=f"Email domain ends in unrecognized '.{tld}'{hint}. Expect a hard bounce.",
                     field_name="email",
-                    meta={"reason": "suspicious_tld", "tld": tld, "likely_tld": likely},
+                    # The address travels with the finding so a downstream
+                    # consumer can propose the correction without re-reading
+                    # the source frame.
+                    meta={
+                        "reason": "suspicious_tld",
+                        "tld": tld,
+                        "likely_tld": likely,
+                        "email": str(raw_email).strip(),
+                    },
                 ))
                 continue
 

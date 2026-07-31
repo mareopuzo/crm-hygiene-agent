@@ -2,7 +2,7 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5001,Omar,Rossi,info@globex395.net,+15748302739,Product Manager,Omar Haddad,marketingqualifiedlead,CONNECTED,United Arab Emirates,1014,2024-01-10,2024-03-09
 5002,Jennifer,Johnson,jennifer.johnson@vandelay734.co,+14051831252,Head of Marketing,Ingrid Larsen,salesqualifiedlead,CONNECTED,United Kingdom,1033,2026-03-13,2026-06-21
 5003,Robert,Chen,robert.chen@acme4.co,+16660816486,Account Executive,Ingrid Larsen,subscriber,UNQUALIFIED,United Arab Emirates,1039,2025-03-25,2026-03-18
-5004,Priya,Andersson,priya.andersson@stark973.net,+17572089259,Product Manager,Omar Haddad,salesqualifiedlead,IN_PROGRESS,United Kingdom,1057,2025-12-09,2024-11-18
+5004,Priya,Andersson,priya.andersson@stark973.net,+17572089259,Product Manager,Omar Haddad,salesqualifiedlead,IN_PROGRESS,U.K.,1057,2025-12-09,2024-11-18
 5005,Omar,Miller,omar.miller@prestige959.net,+14836517266,CTO,Sarah Chen,lead,OPEN,Mexico,1034,2026-01-28,2026-06-19
 5006,James,Okafor,james.okafor@prestige254.net,+19255793766,RevOps Manager,Ingrid Larsen,marketingqualifiedlead,NEW,Germany,1058,2024-11-17,2025-02-02
 5007,Amara,Williams,sales@cyberdyne152-hq.com,+17297514887,Operations Manager,Omar Haddad,customer,UNQUALIFIED,Germany,1088,2024-02-11,2026-06-30
@@ -28,8 +28,8 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5027,Patricia,Brown,patricia.brown@stark973.net,+17009498594,Operations Manager,Omar Haddad,subscriber,NEW,France,1057,2026-03-08,2025-07-12
 5028,Barbara,Patel,barbara.patel@patel.com,+12625217504,CFO,Sarah Chen,salesqualifiedlead,UNQUALIFIED,Mexico,1056,2025-06-27,2026-06-16
 5029,Jennifer,Williams,jennifer.williams@umbrella314.net,+15740227599,Product Manager,Mei Tan,customer,OPEN,India,1079,2025-09-10,2026-05-31
-5030,Amara,Rodriguez,amara.rodriguez@hooli241.co,+17391587146,VP of Sales,Ingrid Larsen,salesqualifiedlead,IN_PROGRESS,Germany,1059,2026-01-30,2026-04-07
-5031,Barbara,Chen,barbara.chen@acme4.co,+19039188121,Procurement Lead,Ingrid Larsen,customer,IN_PROGRESS,United Arab Emirates,1039,2024-10-20,2026-06-09
+5030,Amara,Rodriguez, Amara.Rodriguez@Hooli241.Co ,+17391587146,VP of Sales,Ingrid Larsen,salesqualifiedlead,IN_PROGRESS,Germany,1059,2026-01-30,2026-04-07
+5031,Barbara,Chen,barbara.chen@acme4.co,+19039188121,Procurement Lead,Ingrid Larsen,customer,IN_PROGRESS,UAE,1039,2024-10-20,2026-06-09
 5032,Priya,Rossi,priya.rossi@globex395.net,+13018790736,Product Manager,,marketingqualifiedlead,UNQUALIFIED,France,1014,2024-11-03,2026-07-24
 5033,Chloe,Kim,chloe.kim@gekko310.com,+16329747796,Demand Gen Lead,Mei Tan,customer,NEW,India,1036,2024-11-21,2026-06-01
 5034,Sofia,Patel,sofia.patel@wayne714.ii,+14734252963,Product Manager,Mei Tan,marketingqualifiedlead,OPEN,Australia,1029,2026-04-11,2026-05-11
@@ -45,10 +45,10 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5044,Omar,Patel,omar.patel@stark167.io,+13709996749,Account Executive,Ingrid Larsen,subscriber,CONNECTED,United Kingdom,1008,2025-04-22,2026-02-15
 5045,Omar,Novak,omar.novak@cyberdyne617.io,+16512200347,Founder,Sarah Chen,lead,OPEN,Mexico,1003,2025-05-06,2026-07-12
 5046,Fatima,Miller,,+17222471295,Account Executive,Ingrid Larsen,marketingqualifiedlead,OPEN,United Kingdom,1076,2024-12-10,2026-06-22
-5047,Robert,Silva,robert.silva@vandelay734.co,+15429590757,Head of Marketing,Ingrid Larsen,customer,NEW,,1033,2026-05-31,2026-04-29
+5047,Robert,Silva, Robert.Silva@Vandelay734.Co ,+15429590757,Head of Marketing,Ingrid Larsen,customer,NEW,,1033,2026-05-31,2026-04-29
 5048,Linda,Chen,linda.chen@vandelay256.net,+12067779246,Operations Manager,Sarah Chen,subscriber,OPEN,Mexico,1042,2024-02-19,2026-03-17
 5049,Patricia,Williams,patricia.williams@acme212.com,+18220294678,Founder,Omar Haddad,opportunity,UNQUALIFIED,,1061,2023-12-18,2026-03-23
-5050,Linda,Novak,linda.novak@globex997.co,+19418452174,Demand Gen Lead,Omar Haddad,opportunity,IN_PROGRESS,United Arab Emirates,1006,2026-04-28,2026-07-14
+5050,Linda,Novak,linda.novak@globex997.co,+19418452174,Demand Gen Lead,Omar Haddad,opportunity,IN_PROGRESS,UAE,1006,2026-04-28,2026-07-14
 5051,Diego,Kim,diego.kim@gekko6.io,+14946766309,RevOps Manager,Sarah Chen,customer,CONNECTED,United States,1055,2026-01-16,2026-05-08
 5052,Sofia,Jones,sofia.jones@gekko251.net,+12541988748,Product Manager,Tom Becker,customer,UNQUALIFIED,Mexico,1009,2024-09-03,2026-04-23
 5053,Sofia,Haddad,sofia.haddad@stark209.net,+18466292639,Procurement Lead,Omar Haddad,subscriber,NEW,India,1038,2024-02-01,2026-04-05
@@ -63,7 +63,7 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5062,Priya,Okafor,priya.okafor@hooli241.co,+13464137110,Founder,Ingrid Larsen,marketingqualifiedlead,IN_PROGRESS,,1059,2026-03-15,2026-06-20
 5063,Jennifer,Novak,jennifer.novak@vandelay234.io,+13168672809,Demand Gen Lead,Sarah Chen,salesqualifiedlead,CONNECTED,Mexico,1007,2024-01-07,2026-04-14
 5064,David,Miller,david.miller@globex482.com,+12488842470,Procurement Lead,Sarah Chen,,IN_PROGRESS,Mexico,1066,2023-10-08,2026-03-17
-5065,Chloe,Martinez,chloe.martinez@globex997.co,+12947119487,Product Manager,Omar Haddad,subscriber,NEW,Germany,1006,2024-10-21,2026-06-05
+5065,Chloe,Martinez, Chloe.Martinez@Globex997.Co ,+12947119487,Product Manager,Omar Haddad,subscriber,NEW,Germany,1006,2024-10-21,2026-06-05
 5066,Robert,Rodriguez,robert.rodriguez@stark209.net,+12515328854,RevOps Manager,Ingrid Larsen,customer,CONNECTED,Germany,1038,2025-10-09,2026-04-23
 5067,Fatima,Davis,fatima.davis@wayne336.co,+18694666734,Demand Gen Lead,Tom Becker,marketingqualifiedlead,NEW,Canada,1065,2026-04-05,2026-04-09
 5068,James,Andersson,james.andersson@vandelay333.com,+15702734323,Product Manager,,salesqualifiedlead,UNQUALIFIED,Canada,1010,2024-02-26,2026-05-16
@@ -94,15 +94,15 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5093,Diego,Andersson,diego.andersson@umbrella314.net,+16317520995,Head of Marketing,Mei Tan,subscriber,IN_PROGRESS,Singapore,1079,2025-08-28,2026-03-11
 5094,Sofia,Haddad,sofia.haddad@gekko6.io,+16772511222,Operations Manager,Sarah Chen,lead,IN_PROGRESS,United States,1055,2026-03-25,2026-05-29
 5095,Wei,Novak,wei.novak@hooli241.cp,+12269754673,RevOps Manager,Ingrid Larsen,opportunity,UNQUALIFIED,United Kingdom,1059,2023-08-10,2026-03-04
-5096,Linda,Jones,linda.jones@stark209.net,+16301686077,Founder,Omar Haddad,lead,UNQUALIFIED,United Arab Emirates,1038,2025-06-12,2026-07-08
+5096,Linda,Jones,linda.jones@stark209.net,+16301686077,Founder,Omar Haddad,lead,UNQUALIFIED,UAE,1038,2025-06-12,2026-07-08
 5097,Yuki,Patel,yuki.patel@gekko251.net,+18631781526,CFO,Tom Becker,opportunity,NEW,Canada,1009,2023-11-11,2026-07-18
 5098,Omar,Kim,omar.kim@gekko447.io,+17384386869,VP of Sales,Sarah Chen,marketingqualifiedlead,NEW,Canada,1048,2025-02-22,2026-02-11
-5099,Omar,Brown,omar.brown@prestige476.net,+19452571359,Founder,Mei Tan,lead,NEW,Japan,1075,2023-06-08,2026-05-04
+5099,Omar,Brown, Omar.Brown@Prestige476.Net ,+19452571359,Founder,Mei Tan,lead,NEW,Japan,1075,2023-06-08,2026-05-04
 5100,Omar,Garcia,omar.garcia@cyberdyne152-hq.com,+18290507435,IT Director,Omar Haddad,salesqualifiedlead,OPEN,Germany,1088,2026-02-21,2026-04-03
 5101,Mary,Martinez,,+16483113814,Account Executive,Omar Haddad,subscriber,IN_PROGRESS,France,1026,2023-08-10,2026-04-19
 5102,Fatima,Rossi,fatima.rossi@vandelay734.co,+16452252289,Demand Gen Lead,Ingrid Larsen,lead,IN_PROGRESS,France,1033,2026-03-25,2026-02-12
 5103,William,Rodriguez,william.rodriguez@gekko897.io,+15433149532,Procurement Lead,Ingrid Larsen,salesqualifiedlead,CONNECTED,United Arab Emirates,1016,2024-08-05,2026-06-12
-5104,Diego,Rossi,diego.rossi@gekko447.io,+14230272804,Head of Marketing,Sarah Chen,customer,CONNECTED,United States,1048,2024-01-31,2026-02-25
+5104,Diego,Rossi,diego.rossi@gekko447.io,+14230272804,Head of Marketing,Sarah Chen,customer,CONNECTED,us,1048,2024-01-31,2026-02-25
 5105,Jennifer,Silva,jennifer.silva@stark209.net,+12440654676,Founder,Ingrid Larsen,customer,IN_PROGRESS,France,1038,2023-12-30,2026-02-25
 5106,Wei,Garcia,wei.garcia@initech522-hq.com,+13906571986,RevOps Manager,Omar Haddad,subscriber,IN_PROGRESS,United Arab Emirates,1089,2024-12-15,2026-02-16
 5107,Mary,Williams,mary.williams@acme4.co,+14738095498,Founder,,opportunity,OPEN,United Kingdom,1086,2025-09-11,2026-02-24
@@ -114,10 +114,10 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5113,John,Silva,john.silva@vandelay930.io,+15828240439,CTO,Ingrid Larsen,customer,OPEN,Mexico,1070,2023-08-24,2026-06-02
 5114,Patricia,Miller,patricia.miller@prestige315.io,+15394626443,VP of Sales,Tom Becker,marketingqualifiedlead,UNQUALIFIED,Mexico,1018,2024-06-05,2026-04-01
 5115,Fatima,Jones,fatima.jones@umbrella314.net,+15797809576,Head of Marketing,Mei Tan,marketingqualifiedlead,CONNECTED,,1079,2023-07-20,2026-04-15
-5116,Wei,Chen,wei.chen@vandelay333.com,+16833241714,Founder,Sarah Chen,customer,NEW,Canada,1010,2023-11-19,2024-08-01
+5116,Wei,Chen, Wei.Chen@Vandelay333.Com ,+16833241714,Founder,Sarah Chen,customer,NEW,Canada,1010,2023-11-19,2024-08-01
 5117,Barbara,Jones,barbara.jones@prestige309.com,+19042861284,CTO,Mei Tan,lead,CONNECTED,Australia,1071,2025-10-19,2026-03-19
 5118,Robert,Martinez,support@gekko647.com,+12695642802,IT Director,Sarah Chen,lead,IN_PROGRESS,Mexico,1022,2024-11-26,2026-07-09
-5119,David,Miller,david.miller@globex100.net,+13178758213,Demand Gen Lead,Omar Haddad,marketingqualifiedlead,UNQUALIFIED,United Kingdom,1082,2023-09-05,2026-02-15
+5119,David,Miller, David.Miller@Globex100.Net ,+13178758213,Demand Gen Lead,Omar Haddad,marketingqualifiedlead,UNQUALIFIED,United Kingdom,1082,2023-09-05,2026-02-15
 5120,Jennifer,Chen,jennifer.chen@prestige476.net,+12662259333,Demand Gen Lead,Mei Tan,opportunity,UNQUALIFIED,Japan,1075,2023-05-03,2026-07-19
 5121,James,Williams,james.williams@globex997.co,+19606483164,Operations Manager,Omar Haddad,customer,OPEN,United Arab Emirates,1006,2026-04-29,2026-03-24
 5122,Omar,Silva,omar.silva@stark209.net,+14074232200,Demand Gen Lead,,salesqualifiedlead,IN_PROGRESS,United Arab Emirates,1038,2026-02-01,2026-07-14
@@ -128,7 +128,7 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5127,Diego,Smith,diego.smith@initech253.co,+16059743975,CFO,Mei Tan,salesqualifiedlead,OPEN,Singapore,1012,2024-07-08,2026-07-17
 5128,Mary,Martinez,mary.martinez@soylent679.net,+18861290879,Demand Gen Lead,Sarah Chen,customer,CONNECTED,Canada,1064,2023-06-27,2026-07-27
 5129,Patricia,Okafor,patricia.okafor@prestige315.io,+15124623359,Procurement Lead,Ingrid Larsen,marketingqualifiedlead,NEW,United Arab Emirates,1018,2026-03-18,2024-09-23
-5130,Fatima,Miller,fatima.miller@prestige322.com,+14376074389,Head of Marketing,Omar Haddad,salesqualifiedlead,UNQUALIFIED,United Arab Emirates,1047,2023-05-31,2026-05-19
+5130,Fatima,Miller,fatima.miller@prestige322.com,+14376074389,Head of Marketing,Omar Haddad,salesqualifiedlead,UNQUALIFIED,UAE,1047,2023-05-31,2026-05-19
 5131,Sofia,Novak,sofia.novak@gekko897.io,+16847572330,Head of Marketing,Ingrid Larsen,salesqualifiedlead,IN_PROGRESS,France,1016,2023-05-15,2025-08-10
 5132,Robert,Miller,robert.miller@wonka662.com,+14186664545,CFO,Omar Haddad,subscriber,NEW,United Kingdom,1078,2025-09-23,2026-05-05
 5133,Diego,Haddad,diego.haddad@hooli241.co,+16934662569,CFO,Ingrid Larsen,lead,IN_PROGRESS,France,1059,2025-08-02,2024-11-08
@@ -153,31 +153,31 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5152,Chloe,Miller,admin@hooli686.io,+18918996883,Demand Gen Lead,Omar Haddad,salesqualifiedlead,CONNECTED,France,1023,2026-01-04,2026-04-18
 5153,Chloe,Brown,chloe.brown@globex100.net,+16216305802,RevOps Manager,,marketingqualifiedlead,OPEN,United Kingdom,1024,2025-01-12,2026-04-22
 5154,Linda,Andersson,linda.andersson@andersson.com,+16097548370,Operations Manager,Ingrid Larsen,opportunity,UNQUALIFIED,United Kingdom,1035,2025-01-11,2026-02-12
-5155,Barbara,Davis,barbara.davis@stark167.io,+14868119543,RevOps Manager,Ingrid Larsen,marketingqualifiedlead,OPEN,United Arab Emirates,1008,2023-09-05,2024-06-13
+5155,Barbara,Davis,barbara.davis@stark167.io,+14868119543,RevOps Manager,Ingrid Larsen,marketingqualifiedlead,OPEN,UAE,1008,2023-09-05,2024-06-13
 5156,Patricia,Martinez,patricia.martinez@gekko447.io,+14639796200,Account Executive,Sarah Chen,lead,CONNECTED,United States,1048,2023-12-12,2026-02-24
-5157,Barbara,Okafor,barbara.okafor@wayne925-hq.net,+18653911529,RevOps Manager,Sarah Chen,opportunity,OPEN,United Arab Emirates,1090,2026-01-14,2026-03-17
+5157,Barbara,Okafor, Barbara.Okafor@Wayne925-Hq.Net ,+18653911529,RevOps Manager,Sarah Chen,opportunity,OPEN,United Arab Emirates,1090,2026-01-14,2026-03-17
 5158,Amara,Haddad,amara.haddad@prestige322.com,+16630415913,Product Manager,Omar Haddad,subscriber,NEW,Germany,1047,2023-06-27,2026-06-21
 5159,Jennifer,Nguyen,jennifer.nguyen@vandelay42.io,+13897690739,Demand Gen Lead,Sarah Chen,lead,UNQUALIFIED,Canada,1067,2025-12-26,2026-03-21
 5160,Amara,Johnson,amara.johnson@hooli241.co,+16861663907,Procurement Lead,Ingrid Larsen,salesqualifiedlead,UNQUALIFIED,,1059,2023-05-13,2026-04-02
 5161,Chloe,Martinez,chloe.martinez@cyberdyne617.io,+13700586760,VP of Sales,Sarah Chen,customer,OPEN,Mexico,1003,2026-02-01,2026-07-18
-5162,Wei,Patel,wei.patel@wayne925-hq.net,+16568814035,VP of Sales,Sarah Chen,subscriber,CONNECTED,United States,1090,2024-11-20,2024-04-14
-5163,Jennifer,Jones,jennifer.jones@initech286.com,+19069004259,Procurement Lead,Omar Haddad,marketingqualifiedlead,CONNECTED,United Arab Emirates,1083,2024-05-18,2026-04-24
+5162,Wei,Patel, Wei.Patel@Wayne925-Hq.Net ,+16568814035,VP of Sales,Sarah Chen,subscriber,CONNECTED,United States,1090,2024-11-20,2024-04-14
+5163,Jennifer,Jones,jennifer.jones@initech286.com,+19069004259,Procurement Lead,Omar Haddad,marketingqualifiedlead,CONNECTED,UAE,1083,2024-05-18,2026-04-24
 5164,John,Silva,john.silva@prestige315.io,+12509525588,CFO,Ingrid Larsen,,UNQUALIFIED,Germany,1018,2025-03-31,2026-07-29
 5165,James,Martinez,james.martinez@gekko157.net,+19187627141,CFO,Tom Becker,,UNQUALIFIED,Canada,1060,2025-03-17,2026-05-27
 5166,Amara,Patel,amara.patel@cyberdyne774.net,+13183906581,IT Director,Tom Becker,subscriber,NEW,United Kingdom,1020,2024-02-23,2026-02-22
 5167,James,Davis,,+12289012242,Product Manager,,subscriber,CONNECTED,Mexico,1027,2026-03-23,2026-05-28
 5168,Mary,Kim,mary.kim@stark973.net,+17301446822,Account Executive,Omar Haddad,subscriber,OPEN,France,1057,2025-03-08,2026-03-04
-5169,William,Chen,william.chen@cyberdyne971.io,+19612993632,Founder,,lead,IN_PROGRESS,United States,1077,2023-07-29,2026-06-03
+5169,William,Chen,william.chen@cyberdyne971.io,+19612993632,Founder,,lead,IN_PROGRESS,U.S.,1077,2023-07-29,2026-06-03
 5170,Wei,Martinez,wei.martinez@gekko310.com,+16556778352,Product Manager,Mei Tan,customer,OPEN,India,1036,2023-05-19,2026-03-25
 5171,Mary,Patel,sales@initech286.com,+14883394191,CFO,Omar Haddad,marketingqualifiedlead,CONNECTED,United Arab Emirates,1083,2025-08-29,2026-05-14
 5172,Priya,Garcia,priya.garcia@soylent622.co,+14033747850,Account Executive,Sarah Chen,marketingqualifiedlead,OPEN,Canada,1069,2026-03-04,2026-03-08
-5173,Wei,Okafor,wei.okafor@cyberdyne664.net,+14276297510,Procurement Lead,Ingrid Larsen,lead,IN_PROGRESS,Germany,1072,2024-08-23,2025-10-15
+5173,Wei,Okafor, Wei.Okafor@Cyberdyne664.Net ,+14276297510,Procurement Lead,Ingrid Larsen,lead,IN_PROGRESS,Germany,1072,2024-08-23,2025-10-15
 5174,John,Andersson,john.andersson@gekko447.io,+16692097123,IT Director,,lead,NEW,Canada,1048,2024-05-19,2026-02-25
 5175,Sofia,Johnson,sofia.johnson@vandelay333.com,+17103122481,Product Manager,Sarah Chen,customer,UNQUALIFIED,,1010,2023-10-23,2026-06-06
 5176,William,Martinez,william.martinez@gekko914.net,+16025070544,IT Director,Tom Becker,subscriber,CONNECTED,United States,1002,2025-05-08,2026-04-19
 5177,Linda,Silva,linda.silva@vandelay256.net,+15330806782,Procurement Lead,Sarah Chen,salesqualifiedlead,UNQUALIFIED,Mexico,1042,2024-06-25,2026-05-12
 5178,David,Patel,david.patel@globex482.com,+15791648448,RevOps Manager,Sarah Chen,subscriber,CONNECTED,Canada,1066,2025-05-10,2026-04-26
-5179,William,Okafor,william.okafor@globex997.co,+18710992596,Account Executive,Omar Haddad,customer,OPEN,United Kingdom,1006,2025-01-12,2026-03-10
+5179,William,Okafor,william.okafor@globex997.co,+18710992596,Account Executive,Omar Haddad,customer,OPEN,England,1006,2025-01-12,2026-03-10
 5180,Lars,Chen,lars.chen@wayne908.net,+13267841227,Account Executive,Mei Tan,marketingqualifiedlead,OPEN,India,1054,2023-04-21,2026-05-28
 5181,Diego,Silva,diego.silva@gekko556.com,+13449827559,RevOps Manager,Sarah Chen,customer,CONNECTED,Canada,1084,2025-07-21,2026-04-30
 5182,Jennifer,Jones,jennifer.jones@vandelay930.io,+17085446433,CFO,Omar Haddad,customer,NEW,United Kingdom,1070,2026-01-29,2026-07-17
@@ -187,12 +187,12 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5186,Jennifer,Brown,jennifer.brown@initech522.com,+14252218154,Account Executive,Omar Haddad,lead,UNQUALIFIED,France,1013,2024-07-05,2026-05-22
 5187,Priya,Williams,,+16120152660,RevOps Manager,Sarah Chen,opportunity,OPEN,Mexico,1048,2025-03-25,2026-05-14
 5188,Chloe,Williams,chloe.williams@gekko556.com,+19086242698,VP of Sales,Sarah Chen,subscriber,CONNECTED,Canada,1084,2024-05-19,2026-03-10
-5189,Diego,Johnson,diego.johnson@globex100.net,+16335555459,CTO,Omar Haddad,subscriber,CONNECTED,United Arab Emirates,1082,2024-08-21,2026-03-07
+5189,Diego,Johnson, Diego.Johnson@Globex100.Net ,+16335555459,CTO,Omar Haddad,subscriber,CONNECTED,UAE,1082,2024-08-21,2026-03-07
 5190,Patricia,Haddad,,+12986839603,IT Director,Omar Haddad,,CONNECTED,France,1006,2026-03-27,2024-03-31
 5191,Chloe,Rodriguez,chloe.rodriguez@vandelay930.io,+14826557688,CTO,Mei Tan,marketingqualifiedlead,NEW,Singapore,1070,2025-09-08,2025-09-11
 5192,John,Martinez,john.martinez@umbrella231.com,+14422182038,Product Manager,Sarah Chen,salesqualifiedlead,UNQUALIFIED,Canada,1021,2024-05-05,2026-06-24
 5193,John,Haddad,john.haddad@haddad.com,+12230624431,Procurement Lead,Ingrid Larsen,lead,NEW,France,1045,2024-04-09,2026-05-07
-5194,James,Rodriguez,james.rodriguez@prestige254.net,+14107125807,Founder,Ingrid Larsen,opportunity,CONNECTED,,1058,2025-06-15,2026-03-02
+5194,James,Rodriguez, James.Rodriguez@Prestige254.Net ,+14107125807,Founder,Ingrid Larsen,opportunity,CONNECTED,,1058,2025-06-15,2026-03-02
 5195,Chloe,Kim,chloe.kim@soylent898.net,+19611401044,Operations Manager,Ingrid Larsen,lead,NEW,United Kingdom,1011,2024-12-29,2026-06-20
 5196,Priya,Jones,priya.jones@initech197.ii,+13360122653,Head of Marketing,Omar Haddad,subscriber,NEW,France,1050,2024-01-02,2025-06-20
 5197,David,Brown,david.brown@umbrella157.com,+12374938761,Procurement Lead,Ingrid Larsen,salesqualifiedlead,UNQUALIFIED,United Arab Emirates,1017,2025-12-01,2026-07-23
@@ -215,7 +215,7 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5214,Mary,Brown,,+15647200370,Demand Gen Lead,Sarah Chen,,OPEN,Singapore,1003,2025-02-16,2026-03-19
 5215,Jennifer,Silva,jennifer.silva@umbrella231.com,+17716557048,Procurement Lead,Sarah Chen,salesqualifiedlead,OPEN,Canada,1021,2025-06-18,2026-06-12
 5216,Omar,Okafor,omar.okafor@umbrella441.co,+16420347146,Product Manager,Mei Tan,lead,CONNECTED,India,1051,2024-04-25,2026-07-28
-5217,Michael,Miller,michael.miller@gekko310.com,+19526180688,Head of Marketing,Mei Tan,opportunity,NEW,Singapore,1036,2024-06-11,2026-05-07
+5217,Michael,Miller, Michael.Miller@Gekko310.Com ,+19526180688,Head of Marketing,Mei Tan,opportunity,NEW,Singapore,1036,2024-06-11,2026-05-07
 5218,Michael,Andersson,michael.andersson@cyberdyne769.com,+17421766528,RevOps Manager,Ingrid Larsen,opportunity,IN_PROGRESS,United Arab Emirates,1015,2024-04-18,2026-03-01
 5219,Patricia,Patel,patricia.patel@acme119.co,+15631471321,Product Manager,Ingrid Larsen,lead,IN_PROGRESS,United Kingdom,1046,2025-09-29,2026-05-10
 5220,Patricia,Davis,patricia.davis@wayne575.com,+12502291736,Founder,Sarah Chen,customer,OPEN,Mexico,1040,2024-04-26,2026-04-13
@@ -233,11 +233,11 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5232,Omar,Rodriguez,contact@soylent622.co,+13779083221,RevOps Manager,Sarah Chen,subscriber,NEW,Canada,1081,2023-08-10,2026-05-19
 5233,Barbara,Andersson,barbara.andersson@acme399.io,+17700664039,VP of Sales,Ingrid Larsen,customer,NEW,United Arab Emirates,1063,2024-06-27,2026-07-13
 5234,Fatima,Kim,fatima.kim@wayne925.net,+16158080605,Account Executive,Sarah Chen,salesqualifiedlead,IN_PROGRESS,Canada,1028,2024-11-27,2026-05-04
-5235,Fatima,Chen,fatima.chen@umbrella157.com,+18726529127,RevOps Manager,Ingrid Larsen,,NEW,United Kingdom,1017,2025-12-09,2026-02-19
-5236,Amara,Smith,amara.smith@gekko897.io,+12678534043,RevOps Manager,Ingrid Larsen,subscriber,CONNECTED,Germany,1016,2025-10-03,2026-02-13
-5237,Elizabeth,Garcia,elizabeth.garcia@gekko310.com,+16695859475,Founder,Mei Tan,marketingqualifiedlead,NEW,Japan,1036,2025-07-27,2026-07-16
+5235,Fatima,Chen, Fatima.Chen@Umbrella157.Com ,+18726529127,RevOps Manager,Ingrid Larsen,,NEW,United Kingdom,1017,2025-12-09,2026-02-19
+5236,Amara,Smith, Amara.Smith@Gekko897.Io ,+12678534043,RevOps Manager,Ingrid Larsen,subscriber,CONNECTED,Germany,1016,2025-10-03,2026-02-13
+5237,Elizabeth,Garcia, Elizabeth.Garcia@Gekko310.Com ,+16695859475,Founder,Mei Tan,marketingqualifiedlead,NEW,Japan,1036,2025-07-27,2026-07-16
 5238,Priya,Martinez,,+15243697409,Procurement Lead,Sarah Chen,customer,NEW,,1090,2025-12-18,2026-07-29
-5239,Michael,Rossi,michael.rossi@vandelay333.com,+16864908550,Account Executive,Sarah Chen,opportunity,CONNECTED,United States,1010,2026-06-14,2026-05-03
+5239,Michael,Rossi,michael.rossi@vandelay333.com,+16864908550,Account Executive,Sarah Chen,opportunity,CONNECTED,USA,1010,2026-06-14,2026-05-03
 5240,Patricia,Okafor,patricia.okafor@initech522-hq.cim,+12567687951,Head of Marketing,Omar Haddad,lead,CONNECTED,United Kingdom,1089,2025-12-03,2026-07-03
 5241,William,Patel,william.patel@acme4.co,+12588965831,CTO,Ingrid Larsen,customer,OPEN,United Kingdom,1039,2023-07-10,2026-01-03
 5242,James,Novak,james.novak@gekko556.cim,+12704875220,Founder,,,OPEN,Mexico,1084,2025-08-24,2026-04-15
@@ -252,7 +252,7 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5251,William,Okafor,william.okafor@globex997.co,+18710992596,Procurement Lead,Omar Haddad,customer,OPEN,United Kingdom,1006,2025-01-12,2026-03-10
 5252,Chloe,Williams,chloe.williams@gekko556.com,+19086242698,Account Executive,Sarah Chen,subscriber,CONNECTED,Canada,1084,2024-05-19,2026-03-10
 5253,Yuki,Smith,yuki.smith@wayne336.co,+13984173309,Account Executive,Tom Becker,lead,UNQUALIFIED,Canada,1085,2023-09-14,2026-02-19
-5254,Patricia,Haddad,patricia.haddad@hooli241.co,+16360884728,Procurement Lead,Ingrid Larsen,salesqualifiedlead,OPEN,United Kingdom,1059,2023-11-12,2026-05-23
+5254,Patricia,Haddad,patricia.haddad@hooli241.co,+16360884728,Procurement Lead,Ingrid Larsen,salesqualifiedlead,OPEN,U.K.,1059,2023-11-12,2026-05-23
 5255,Priya,Rossi,priya.rossi@globex395.net,+13018790736,RevOps Manager,Omar Haddad,marketingqualifiedlead,UNQUALIFIED,France,1014,2024-11-03,2026-07-24
 5256,Amara,Johnson,amara.johnson@hooli241.co,+16861663907,Product Manager,Ingrid Larsen,salesqualifiedlead,UNQUALIFIED,United Kingdom,1059,2023-05-13,2026-04-02
 5257,Amara,Johnson,amara.johnson@cyberdyne857.io,+17441965112,Operations Manager,Sarah Chen,marketingqualifiedlead,CONNECTED,Mexico,1027,2023-10-12,2026-06-28
@@ -260,7 +260,7 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5259,John,Andersson,john.andersson@gekko447.io,+16692097123,IT Director,Sarah Chen,lead,NEW,Canada,1048,2024-05-19,2024-02-22
 5260,Patricia,Williams,patricia.williams@acme212.com,+18220294678,Head of Marketing,Omar Haddad,opportunity,UNQUALIFIED,United Kingdom,1061,2023-12-18,2026-03-23
 5261,Priya,Andersson,priya.andersson@stark973.net,+17572089259,IT Director,Omar Haddad,salesqualifiedlead,IN_PROGRESS,United Kingdom,1057,2025-12-09,2026-06-06
-5262,Diego,Brown,diego.brown@initech522.com,+17303425740,IT Director,Omar Haddad,lead,CONNECTED,United Arab Emirates,1013,2024-06-01,2026-03-13
+5262,Diego,Brown,diego.brown@initech522.com,+17303425740,IT Director,Omar Haddad,lead,CONNECTED,UAE,1013,2024-06-01,2026-03-13
 5263,Robert,Chen,robert.chen@acme4.co,+16660816486,CTO,Ingrid Larsen,subscriber,UNQUALIFIED,United Arab Emirates,1039,2025-03-25,2026-03-18
 5264,Omar,Chen,omar.chen@wayne846.co,+17272258013,Founder,Mei Tan,opportunity,CONNECTED,Singapore,1074,2023-07-23,2026-02-18
 5265,Robert,Martinez,robert.martinez@globex997.co,+17530330177,CFO,Omar Haddad,subscriber,IN_PROGRESS,United Arab Emirates,1006,2025-01-21,2026-03-29
@@ -269,7 +269,7 @@ Record ID,First Name,Last Name,Email,Phone Number,Job Title,Contact owner,Lifecy
 5268,Jennifer,Silva,jennifer.silva@stark209.net,+12440654676,CTO,Ingrid Larsen,customer,IN_PROGRESS,France,1038,2023-12-30,2026-02-25
 5269,Linda,Patel,linda.patel@gekko647.com,+19073810469,Operations Manager,Sarah Chen,opportunity,CONNECTED,Canada,1022,2024-01-31,2026-07-02
 5270,Barbara,Brown,barbara.brown@wonka725.io,+17153101959,Head of Marketing,Tom Becker,lead,UNQUALIFIED,United States,1073,2023-11-28,2026-06-06
-5271,Michael,Andersson,  MICHAEL.ANDERSSON@CYBERDYNE769.COM ,+17421766528,RevOps Manager,Ingrid Larsen,opportunity,IN_PROGRESS,United Arab Emirates,1015,2024-04-18,2026-03-01
+5271,Michael,Andersson,  MICHAEL.ANDERSSON@CYBERDYNE769.COM ,+17421766528,RevOps Manager,Ingrid Larsen,opportunity,IN_PROGRESS,UAE,1015,2024-04-18,2026-03-01
 5272,Yuki,Silva,  YUKI.SILVA@SOYLENT679.NET ,+13880160025,Product Manager,Sarah Chen,subscriber,CONNECTED,Australia,1064,2024-09-08,2026-02-25
 5273,Linda,Jones,  LINDA.JONES@STARK209.NET ,+16301686077,Founder,Omar Haddad,lead,UNQUALIFIED,United States,1038,2025-06-12,2026-07-08
 5274,Lars,Rodriguez,  LARS.RODRIGUEZ@GLOBEX482.COM ,+19212535633,Head of Marketing,Sarah Chen,lead,CONNECTED,United States,1066,2024-12-10,2026-02-12

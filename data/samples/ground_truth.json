@@ -9,6 +9,8 @@
     "contact_decayed": 25,
     "contact_duplicate_email": 33,
     "contact_invalid_email": 13,
+    "contact_messy_country_spelling": 15,
+    "contact_messy_email_case": 15,
     "contact_missing_country": 13,
     "contact_missing_email": 20,
     "contact_missing_lifecycle": 13,
@@ -499,6 +501,130 @@
         "detail": "priya.jones@initech197.ii"
       }
     ],
+    "contact_messy_country_spelling": [
+      {
+        "record_id": "5104",
+        "detail": "us"
+      },
+      {
+        "record_id": "5239",
+        "detail": "USA"
+      },
+      {
+        "record_id": "5271",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5179",
+        "detail": "England"
+      },
+      {
+        "record_id": "5169",
+        "detail": "U.S."
+      },
+      {
+        "record_id": "5254",
+        "detail": "U.K."
+      },
+      {
+        "record_id": "5163",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5189",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5096",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5155",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5004",
+        "detail": "U.K."
+      },
+      {
+        "record_id": "5031",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5262",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5130",
+        "detail": "UAE"
+      },
+      {
+        "record_id": "5050",
+        "detail": "UAE"
+      }
+    ],
+    "contact_messy_email_case": [
+      {
+        "record_id": "5235",
+        "detail": " Fatima.Chen@Umbrella157.Com "
+      },
+      {
+        "record_id": "5237",
+        "detail": " Elizabeth.Garcia@Gekko310.Com "
+      },
+      {
+        "record_id": "5236",
+        "detail": " Amara.Smith@Gekko897.Io "
+      },
+      {
+        "record_id": "5099",
+        "detail": " Omar.Brown@Prestige476.Net "
+      },
+      {
+        "record_id": "5119",
+        "detail": " David.Miller@Globex100.Net "
+      },
+      {
+        "record_id": "5194",
+        "detail": " James.Rodriguez@Prestige254.Net "
+      },
+      {
+        "record_id": "5162",
+        "detail": " Wei.Patel@Wayne925-Hq.Net "
+      },
+      {
+        "record_id": "5217",
+        "detail": " Michael.Miller@Gekko310.Com "
+      },
+      {
+        "record_id": "5189",
+        "detail": " Diego.Johnson@Globex100.Net "
+      },
+      {
+        "record_id": "5030",
+        "detail": " Amara.Rodriguez@Hooli241.Co "
+      },
+      {
+        "record_id": "5047",
+        "detail": " Robert.Silva@Vandelay734.Co "
+      },
+      {
+        "record_id": "5116",
+        "detail": " Wei.Chen@Vandelay333.Com "
+      },
+      {
+        "record_id": "5157",
+        "detail": " Barbara.Okafor@Wayne925-Hq.Net "
+      },
+      {
+        "record_id": "5065",
+        "detail": " Chloe.Martinez@Globex997.Co "
+      },
+      {
+        "record_id": "5173",
+        "detail": " Wei.Okafor@Cyberdyne664.Net "
+      }
+    ],
     "contact_missing_country": [
       {
         "record_id": "5238",
@@ -823,87 +949,23 @@
     ],
     "deal_missing_amount": [
       {
-        "record_id": "9115",
+        "record_id": "9034",
         "detail": ""
       },
       {
-        "record_id": "9003",
+        "record_id": "9049",
         "detail": ""
       },
       {
-        "record_id": "9110",
+        "record_id": "9030",
         "detail": ""
       },
       {
-        "record_id": "9066",
+        "record_id": "9006",
         "detail": ""
       },
-      {
-        "record_id": "9083",
-        "detail": ""
-      },
-      {
-        "record_id": "9005",
-        "detail": ""
-      },
-      {
-        "record_id": "9109",
-        "detail": ""
-      },
-      {
-        "record_id": "9078",
-        "detail": ""
-      },
-      {
-        "record_id": "9079",
-        "detail": ""
-      },
-      {
-        "record_id": "9054",
-        "detail": ""
-      }
-    ],
-    "deal_missing_close_date": [
       {
         "record_id": "9090",
-        "detail": ""
-      },
-      {
-        "record_id": "9077",
-        "detail": ""
-      },
-      {
-        "record_id": "9112",
-        "detail": ""
-      },
-      {
-        "record_id": "9024",
-        "detail": ""
-      },
-      {
-        "record_id": "9059",
-        "detail": ""
-      },
-      {
-        "record_id": "9065",
-        "detail": ""
-      },
-      {
-        "record_id": "9036",
-        "detail": ""
-      },
-      {
-        "record_id": "9107",
-        "detail": ""
-      }
-    ],
-    "deal_missing_owner": [
-      {
-        "record_id": "9099",
-        "detail": ""
-      },
-      {
-        "record_id": "9076",
         "detail": ""
       },
       {
@@ -911,136 +973,200 @@
         "detail": ""
       },
       {
-        "record_id": "9120",
+        "record_id": "9072",
         "detail": ""
       },
       {
-        "record_id": "9005",
+        "record_id": "9109",
         "detail": ""
       },
       {
-        "record_id": "9073",
+        "record_id": "9052",
         "detail": ""
       },
       {
-        "record_id": "9036",
+        "record_id": "9056",
+        "detail": ""
+      }
+    ],
+    "deal_missing_close_date": [
+      {
+        "record_id": "9016",
         "detail": ""
       },
       {
-        "record_id": "9074",
+        "record_id": "9119",
+        "detail": ""
+      },
+      {
+        "record_id": "9087",
+        "detail": ""
+      },
+      {
+        "record_id": "9107",
+        "detail": ""
+      },
+      {
+        "record_id": "9045",
+        "detail": ""
+      },
+      {
+        "record_id": "9043",
+        "detail": ""
+      },
+      {
+        "record_id": "9101",
+        "detail": ""
+      },
+      {
+        "record_id": "9096",
+        "detail": ""
+      }
+    ],
+    "deal_missing_owner": [
+      {
+        "record_id": "9061",
+        "detail": ""
+      },
+      {
+        "record_id": "9119",
+        "detail": ""
+      },
+      {
+        "record_id": "9059",
+        "detail": ""
+      },
+      {
+        "record_id": "9115",
+        "detail": ""
+      },
+      {
+        "record_id": "9006",
+        "detail": ""
+      },
+      {
+        "record_id": "9007",
+        "detail": ""
+      },
+      {
+        "record_id": "9088",
+        "detail": ""
+      },
+      {
+        "record_id": "9044",
         "detail": ""
       }
     ],
     "deal_past_close_date": [
       {
-        "record_id": "9102",
-        "detail": "open, close date 2026-02-26 in past"
+        "record_id": "9005",
+        "detail": "open, close date 2026-03-03 in past"
       },
       {
-        "record_id": "9083",
-        "detail": "open, close date 2026-05-01 in past"
+        "record_id": "9079",
+        "detail": "open, close date 2026-02-03 in past"
       },
       {
-        "record_id": "9062",
-        "detail": "open, close date 2026-07-19 in past"
+        "record_id": "9117",
+        "detail": "open, close date 2026-04-18 in past"
       },
       {
-        "record_id": "9047",
-        "detail": "open, close date 2026-05-25 in past"
+        "record_id": "9056",
+        "detail": "open, close date 2026-02-20 in past"
       },
       {
         "record_id": "9111",
-        "detail": "open, close date 2026-05-11 in past"
+        "detail": "open, close date 2026-06-16 in past"
       },
       {
-        "record_id": "9055",
-        "detail": "open, close date 2026-04-27 in past"
+        "record_id": "9069",
+        "detail": "open, close date 2026-04-10 in past"
       },
       {
-        "record_id": "9075",
-        "detail": "open, close date 2026-03-28 in past"
+        "record_id": "9052",
+        "detail": "open, close date 2026-02-01 in past"
       },
       {
-        "record_id": "9054",
-        "detail": "open, close date 2026-03-18 in past"
-      },
-      {
-        "record_id": "9089",
-        "detail": "open, close date 2026-06-06 in past"
-      },
-      {
-        "record_id": "9105",
-        "detail": "open, close date 2026-05-10 in past"
+        "record_id": "9036",
+        "detail": "open, close date 2026-03-11 in past"
       },
       {
         "record_id": "9021",
-        "detail": "open, close date 2026-05-14 in past"
+        "detail": "open, close date 2026-06-10 in past"
       },
       {
-        "record_id": "9120",
-        "detail": "open, close date 2026-07-01 in past"
+        "record_id": "9028",
+        "detail": "open, close date 2026-03-19 in past"
+      },
+      {
+        "record_id": "9055",
+        "detail": "open, close date 2026-05-25 in past"
+      },
+      {
+        "record_id": "9080",
+        "detail": "open, close date 2026-07-04 in past"
       }
     ],
     "deal_stale": [
       {
-        "record_id": "9106",
-        "detail": "open, last activity 2025-10-16"
+        "record_id": "9009",
+        "detail": "open, last activity 2026-04-26"
       },
       {
-        "record_id": "9069",
-        "detail": "open, last activity 2026-04-07"
+        "record_id": "9094",
+        "detail": "open, last activity 2025-12-28"
       },
       {
-        "record_id": "9103",
-        "detail": "open, last activity 2026-04-03"
+        "record_id": "9018",
+        "detail": "open, last activity 2026-04-25"
       },
       {
-        "record_id": "9088",
-        "detail": "open, last activity 2026-06-10"
+        "record_id": "9082",
+        "detail": "open, last activity 2026-03-08"
       },
       {
-        "record_id": "9016",
+        "record_id": "9065",
+        "detail": "open, last activity 2025-12-29"
+      },
+      {
+        "record_id": "9093",
+        "detail": "open, last activity 2025-12-11"
+      },
+      {
+        "record_id": "9057",
         "detail": "open, last activity 2026-06-13"
       },
       {
-        "record_id": "9071",
-        "detail": "open, last activity 2026-01-10"
+        "record_id": "9034",
+        "detail": "open, last activity 2025-11-04"
       },
       {
-        "record_id": "9100",
-        "detail": "open, last activity 2026-02-27"
+        "record_id": "9116",
+        "detail": "open, last activity 2026-04-08"
       },
       {
-        "record_id": "9086",
-        "detail": "open, last activity 2026-03-25"
+        "record_id": "9067",
+        "detail": "open, last activity 2025-10-30"
       },
       {
-        "record_id": "9030",
-        "detail": "open, last activity 2026-03-08"
-      },
-      {
-        "record_id": "9025",
-        "detail": "open, last activity 2025-10-22"
-      },
-      {
-        "record_id": "9010",
-        "detail": "open, last activity 2026-05-12"
-      },
-      {
-        "record_id": "9014",
+        "record_id": "9109",
         "detail": "open, last activity 2025-10-09"
       },
       {
-        "record_id": "9051",
-        "detail": "open, last activity 2026-02-15"
+        "record_id": "9025",
+        "detail": "open, last activity 2026-01-23"
       },
       {
-        "record_id": "9042",
-        "detail": "open, last activity 2026-03-08"
+        "record_id": "9076",
+        "detail": "open, last activity 2026-02-01"
       },
       {
-        "record_id": "9072",
-        "detail": "open, last activity 2025-12-29"
+        "record_id": "9105",
+        "detail": "open, last activity 2026-06-06"
+      },
+      {
+        "record_id": "9090",
+        "detail": "open, last activity 2025-11-20"
       }
     ]
   },

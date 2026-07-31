@@ -58,6 +58,25 @@ representing ~42 hours (≈$3,182) of avoidable work and $924,750 of pipeline at
 
 The punch list is ranked by **what fixing it is worth**, not by row count — so a small, expensive category outranks a large cosmetic one. The `+Score` column is *measured*, not estimated: the scorer re-runs with that category removed and takes the difference, which matters because per-record penalty capping makes the relationship non-linear. That turns the report from a complaint into a plan: *"merge these 33 duplicates, recover 3.4 points and 8 hours."*
 
+## From findings to fixes
+
+A diagnosis you can't act on is just a complaint, so the app also generates the files you work from — downloadable individually or as one ZIP with a README. They come in three kinds, and the distinction between them *is* the safety model:
+
+| | Kind | What it is |
+|---|---|---|
+| 🟢 | **Ready to import** | Mechanical, information-preserving corrections — trimming whitespace off an email, writing `United States` where the record said `USA`. The spelling changes, the meaning never does. Feed straight to HubSpot's importer. |
+| 🟡 | **Review first** | A correction the tool *inferred* but can't be sure of, like reading `@acme.cim` as a typo of `@acme.com`. Ships with current and proposed values side by side. Never pre-applied. |
+| 🔵 | **Worklist** | No mechanical fix exists. Merging duplicates, reassigning an account, deciding whether a silent deal is dead — these need judgment, so the file is a checklist, not an import. |
+
+Four rules keep this from being dangerous:
+
+- **Import files carry only the Record ID and the columns being changed.** An import is a write, and a wide file is a wide blast radius.
+- **Records queued for merging are excluded from email normalization.** Writing the canonical form onto a duplicate would make it collide with the master it's about to be merged into.
+- **A suggestion is only offered when it's confident.** `.cim` is one edit from `.com` and gets a proposal; `.nte` is two from `.net` and doesn't. Guessing wrong here corrupts a real address.
+- **The missing-fields template marks untouched fields `n/a` rather than leaving them blank.** An empty cell in a HubSpot import can *clear* a value — so cells that were never the problem are impossible to submit by accident.
+
+The duplicate worklist is deliberately **not** importable. Merging can't be undone in HubSpot, so it's a one-at-a-time job with the master record named for you.
+
 ## How the numbers are built
 
 A single figure a sharp CRO can poke a hole in discredits the whole report, so the model follows three rules:

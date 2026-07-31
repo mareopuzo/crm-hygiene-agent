@@ -25,6 +25,7 @@ import pandas as pd
 import streamlit as st
 
 from engine.config import SAMPLE_OWNER_REGIONS, build_config
+from engine.fixes import build_fix_files, bundle_zip
 from engine.loader import load_crm_data
 from engine.models import COMPANIES, CONTACTS, DEALS
 from engine.report import build_report
@@ -565,4 +566,70 @@ else:
         file_name="crm_hygiene_report.json",
         mime="application/json",
         width="stretch",
+    )
+
+
+# --------------------------------------------------------------------------- #
+# Fix files
+#
+# The bridge from diagnosis to action: findings become files you work from.
+# Kept visually separated by kind, because "ready to import" and "needs a human
+# decision" are very different invitations and conflating them is how someone
+# imports a guess into their live CRM.
+# --------------------------------------------------------------------------- #
+
+st.divider()
+st.subheader("Fix it")
+
+fix_files = build_fix_files(load(contacts_bytes, companies_bytes, deals_bytes, as_of),
+                            report.findings)
+
+if not fix_files:
+    st.success("Nothing to fix — no findings to act on.")
+else:
+    st.caption(
+        "Findings turned into files you can work from. Import files are mechanical "
+        "corrections; the rest need a human. Every file carries its own instructions, "
+        "and the bundle includes a README."
+    )
+
+    KIND_STYLE = {
+        "import": ("🟢", "Ready to import", "Mechanical correction — nothing is lost."),
+        "review": ("🟡", "Review first", "A suggestion the tool can't be certain of."),
+        "worklist": ("🔵", "Worklist", "Needs a decision per row — not an import."),
+    }
+
+    st.download_button(
+        f"⬇ Download all {len(fix_files)} fix files (ZIP)",
+        data=bundle_zip(fix_files),
+        file_name="crm_hygiene_fix_files.zip",
+        mime="application/zip",
+        width="stretch",
+        type="primary",
+    )
+
+    for kind in ("import", "review", "worklist"):
+        group = [f for f in fix_files if f.kind == kind]
+        if not group:
+            continue
+        icon, label, blurb = KIND_STYLE[kind]
+        st.markdown(f"**{icon} {label}** — {blurb}")
+        for fix in group:
+            row = st.columns([3, 1])
+            row[0].markdown(f"`{fix.filename}` · **{fix.row_count}** rows — {fix.summary}")
+            row[1].download_button(
+                "Download",
+                data=fix.to_csv_bytes(),
+                file_name=fix.filename,
+                mime="text/csv",
+                key=f"dl_{fix.filename}",
+                width="stretch",
+            )
+            with st.expander(f"How to use {fix.filename}"):
+                st.write(fix.instructions)
+
+    st.warning(
+        "**Before importing anything:** export a full backup of the object you're changing — "
+        "that backup is the only undo an import has. Test on five rows first. "
+        "And never bulk-merge duplicates; merging can't be undone."
     )

@@ -411,6 +411,32 @@ def generate_contacts(rng: random.Random, n: int, today: date, companies: list[d
                   "contact_bad_routing",
                   detail=lambda r: f"{r[COL_COUNTRY]} is outside {r[COL_CONTACT_OWNER]}'s region")
 
+    # --- Planted: inconsistent formatting ---
+    # Neither of these is a hygiene *failure* — the mailbox and the country are
+    # correct, just written inconsistently — so no check flags them. They exist
+    # because normalizing them is exactly the kind of safe, mechanical change a
+    # fix file can pre-fill, and a sample with none of it would make that
+    # feature look like it does nothing.
+    planter.plant(rows, max(2, n // 16), {COL_EMAIL},
+                  lambda r: r.__setitem__(COL_EMAIL, f" {r[COL_EMAIL].title()} "),
+                  "contact_messy_email_case", detail=lambda r: r[COL_EMAIL])
+
+    # Only variants that resolve back to the same country, so territory routing
+    # is unaffected and the planted routing count stays exact.
+    messy_spellings = {
+        "United States": ["USA", "U.S.", "us"],
+        "United Kingdom": ["UK", "U.K.", "England"],
+        "United Arab Emirates": ["UAE"],
+    }
+    eligible = [r for r in rows if r[COL_COUNTRY] in messy_spellings]
+    for _ in range(max(2, n // 16)):
+        row = planter.pick(eligible, {COL_COUNTRY})
+        if row is None:
+            break
+        row[COL_COUNTRY] = rng.choice(messy_spellings[row[COL_COUNTRY]])
+        planter.claim(row, {COL_COUNTRY})
+        gt.add("contact_messy_country_spelling", row["Record ID"], row[COL_COUNTRY])
+
     return rows
 
 
