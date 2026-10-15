@@ -1,0 +1,31 @@
+name: Keep Streamlit app awake
+
+# Streamlit Community Cloud sleeps apps after a period without traffic.
+# A plain HTTP ping doesn't count as a visit, so this opens the app in a
+# real headless browser and clicks the wake button if the app is asleep.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright==1.48.0
+          python -m playwright install --with-deps chromium
+
+      - name: Visit app and wake it if sleeping
+        env:
+          APP_URL: https://crm-hygiene-agent.streamlit.app/
+        run: python .github/scripts/keep_awake.py
