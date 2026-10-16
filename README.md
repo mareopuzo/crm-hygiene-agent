@@ -50,7 +50,7 @@ HubSpot ships real data-quality tooling — a Data Quality Command Center, dupli
 
 Three gaps this fills:
 
-**1. It quantifies.** HubSpot shows you a list of issues. It doesn't tell you that list represents ~42 hours of avoidable work and $924,750 of pipeline whose timing can't be trusted. Data hygiene competes for attention against every other item on a RevOps roadmap, and without a number attached it loses that fight every quarter.
+**1. It quantifies.** HubSpot shows you a list of issues. It doesn't tell you that list represents ~42 hours of avoidable work and $766,250 of pipeline whose timing can't be trusted. Data hygiene competes for attention against every other item on a RevOps roadmap, and without a number attached it loses that fight every quarter.
 
 **2. It prioritizes.** "Here is everything wrong" is not a plan. This ranks categories by what fixing them is worth and states what each recovers on the score, so the first hour of cleanup goes to the right place — and the score gives you something to trend in a QBR.
 
@@ -63,12 +63,12 @@ The rules are also legible. Every threshold is a value in `engine/config.py` and
 ## The output
 
 ```
-CRM Health Score 78/100 (grade C) — 246 issues across 213 of 493 records,
-representing ~42 hours (≈$3,182) of avoidable work and $924,750 of pipeline at risk.
+CRM Health Score 78/100 (grade C) — 246 issues across 210 of 493 records,
+representing ~42 hours (≈$3,182) of avoidable work and $766,250 of pipeline at risk.
 
 #  Issue                              Recs     Sev   Hours       Cost     At risk  +Score
-1  Stale Deals                          15    High     3.8       $281    $556,000     1.5
-2  Deals Past Close Date                12    High     2.0       $150    $368,750     1.2
+1  Stale Deals                          15    High     3.8       $281    $565,000     1.5
+2  Deals Past Close Date                12    High     2.0       $150    $201,250     1.2
 3  Missing Required Fields — Contact    62    High     9.0       $678          $0     5.5
 4  Duplicate Contacts                   33    High     8.2       $619          $0     3.4
 5  Territory Routing — Contact          20    High     6.7       $500          $0     1.8
@@ -156,7 +156,7 @@ The app runs free on [Streamlit Community Cloud](https://share.streamlit.io):
 
 | Field | Value |
 |---|---|
-| Repository | `mareopuzo/project` |
+| Repository | `mareopuzo/crm-hygiene-agent` |
 | Branch | `main` |
 | **Main file path** | **`app.py`** |
 | Python version | 3.11 (under *Advanced settings*) |
@@ -180,7 +180,7 @@ The manifest is *exact*, not approximate — two properties make it so. Base rec
 ## Testing
 
 ```bash
-python -m pytest -q      # 55 tests
+python -m pytest -q      # 141 tests
 ```
 
 Every check is verified against the ground-truth manifest, plus hand-built edge cases: threshold boundaries, legitimate-but-unusual TLDs (`.co` is one edit from `.com` and must not be flagged), blank-vs-wrong distinctions, and a guarantee that no check mutates its input.
